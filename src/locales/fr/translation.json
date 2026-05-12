@@ -9,8 +9,8 @@
   },
   "home": {
     "title": "Anh Vu",
-    "subtitle": "Étudiant en Master Intelligence Artificielle (M2), Développeur Full-Stack et Passionné d'IA",
-    "description": "Passionné par l'utilisation de l'apprentissage automatique, de la vision par ordinateur et des technologies web pour créer des solutions pratiques et évolutives avec un impact réel.",
+    "subtitle": "Étudiant en M2 IA, à la recherche d'opportunités de doctorat en données 3D, IA, vision par ordinateur et nutrition/gastronomie assistée par IA, ainsi que de postes CDI dans ces domaines.",
+    "description": "Passionné par la transformation d'idées de recherche en solutions concrètes grâce au machine learning, à la vision par ordinateur et au développement full-stack.",
     "viewWork": "Voir Mon Travail",
     "getInTouch": "Me Contacter",
     "certifications": "Certifications",
@@ -47,8 +47,8 @@
     "title": "À Propos de Moi",
     "subtitle": "Découvrez mon parcours, mes compétences et ce qui me motive en tant que développeur.",
     "greeting": "Salut, je suis Anh Vu",
-    "description1": "Je suis étudiant en Master (M2) en Informatique à l'Université Lyon 1, spécialisé en IA et Science des Données. Je suis un développeur full-stack passionné, motivé par la création de solutions numériques intelligentes et centrées sur l'utilisateur. Mon parcours mélange les technologies web avec des projets axés sur l'IA, me permettant de résoudre des problèmes complexes et de concevoir des expériences fonctionnelles et belles.",
-    "description2": "Quand je ne code pas, j'explore souvent de nouvelles technologies, je contribue à des initiatives open-source, ou je savoure un bon café en lisant les dernières avancées technologiques.",
+    "description1": "Je suis étudiant en M2 Informatique à l'Université Lyon 1, spécialisé en IA et Data Science. Je travaille sur les données 3D, la vision par ordinateur et l'IA appliquée, notamment à l'intersection de la nutrition et de la gastronomie.",
+    "description2": "Je recherche actuellement des offres de doctorat en données 3D, IA, vision par ordinateur et IA pour la nutrition/gastronomie, et je suis également ouvert à des postes CDI dans ces domaines. Je suis passionné par la création de solutions IA utiles et centrées sur l'humain, de la recherche jusqu'au déploiement.",
     "skills": "Compétences",
     "frontend": "Frontend",
     "backend": "Backend",
@@ -85,7 +85,7 @@
       "airmiumSystem": "Analyse des flux de données et des exigences utilisateur, Conçu et implémenté un système sécurisé et évolutif pour l'historisation des données et le contrôle qualité, Développé des interfaces web pour accéder et visualiser les données de traitement d'air en temps réel, Proposé des solutions pour les stratégies de sauvegarde et l'accessibilité mobile/web.",
       "edgeDetectionProject": "Ce projet implémente des techniques avancées de détection de contours utilisant des opérateurs différentiels (Prewitt, Sobel, Kirsch) combinés à des processus de seuillage et de raffinement pour mettre en évidence les contours dans les images.",
       "visionTransformer": "Ce projet explore les capacités des Vision Transformers (ViTs) en segmentant les images en patches de taille fixe et en tentant de reconstruire l'image originale en utilisant des mécanismes d'attention. En expérimentant avec de petites permutations de patches (par exemple, 4×4), le modèle évalue si le contexte global peut être préservé et restauré à partir de segments d'image mélangés ou occultés. L'objectif est d'enquêter sur l'efficacité de l'attention des transformers dans la récupération de la structure d'image, ouvrant la voie aux applications dans l'inpainting d'images, le redimensionnement ou la restauration.",
-      "cookingAssistant": "Cette application web est conçue pour aider les utilisateurs à gérer leur cuisine plus efficacement en combinant le suivi intelligent des ingrédients avec la gestion personnalisée des recettes. Les utilisateurs peuvent stocker des ingrédients avec des dates d'expiration, créer et planifier des repas, et recevoir des suggestions de recettes basées sur ce qu'ils ont à la maison. Elle prend également en charge la numérisation basée sur l'OCR d'étiquettes alimentaires ou de notes manuscrites, aidant à numériser et organiser les données culinaires de manière transparente.",
+      "cookingAssistant": "Progression du projet Inventory Culinary Assistance : Step 1 - Vision & Ingestion Pipeline (#1) terminé, Step 2 - Dynamic Inventory & Flavor Matrix (#2) terminé, architecture Neo4j Knowledge Graph et Automated Ingestion Pipeline (#5) terminées, et montée en échelle du dataset Culinary Philosophy avec supervised fine-tuning (#9) terminée. Je suis actuellement en phase de collecte de données pour l'étape suivante.",
       "foodMining": "Une plateforme d'analyse de données alimentaires complète conçue pour identifier et caractériser les cultures culinaires à partir de plus de 250 000 recettes de Food.com. Développement de modules de data mining pour l'extraction, la structuration et la visualisation à grande échelle de données alimentaires. Implémentation d'algorithmes de classification et de clustering pour révéler des tendances culturelles, des habitudes nutritionnelles et des corrélations entre ingrédients, plats et régions. Le développement futur inclut l'intégration d'aspects nutritionnels liés à la médecine traditionnelle asiatique.",
       "biomedicalRNN": "Un classificateur de textes biomédicaux basé sur des réseaux de neurones récurrents (RNN) utilisant PyTorch. Conception et entraînement de modèles de traitement automatique du langage pour extraire et catégoriser l'information textuelle dans des corpus spécialisés. Implémentation de pipelines complets de prétraitement, vectorisation et évaluation sur des jeux de données réels. Obtention d'une haute précision sur la classification d'abstracts scientifiques et l'identification automatique de thématiques médicales, démontrant la robustesse du modèle en contexte réel.",
       "fashionNumbers": "Développement d'un modèle de classification d'images utilisant des réseaux de neurones pour l'identification automatique d'articles de mode et de chiffres à partir de jeux de données standards (Fashion MNIST, MNIST). Conception de pipelines de prétraitement et d'augmentation de données pour améliorer la robustesse du modèle. Évaluation sur des ensembles de tests réels avec d'excellents taux de précision, illustrant l'efficacité du modèle pour la reconnaissance visuelle dans des contextes variés.",
@@ -99,7 +99,55 @@
     "subtitle": "Mon parcours professionnel et académique en ingénierie logicielle, IA et développement web.",
     "workExperience": "Expérience Professionnelle et Projets",
     "education": "Formation",
-    "otherExperiences": "Autres Expériences"
+    "otherExperiences": "Autres Expériences",
+    "items": [
+      {
+        "id": 1,
+        "company": "SNCF Réseau",
+        "employmentType": "Stage",
+        "position": "Stagiaire IA & Vision par Ordinateur 3D – Segmentation de nuages de points LiDAR pour la génération BIM",
+        "duration": "Mars 2026 – Présent · 3 mois",
+        "location": "Saint-Denis, Île-de-France, France · Sur site",
+        "description": "Stagiaire en recherche IA travaillant sur la segmentation 3D de nuages de points pour la génération automatique de modèles BIM dans des environnements ferroviaires denses.",
+        "responsibilities": [
+          "Réaliser des revues de littérature sur les méthodes de segmentation sémantique et d’instance 3D pour les nuages de points LiDAR.",
+          "Concevoir et construire un jeu de données annoté pour des scènes ferroviaires denses (gares, zones multi-voies).",
+          "Définir les schémas d’annotation et développer un workflow d’annotation avec contrôle qualité.",
+          "Développer et entraîner des modèles de deep learning pour la segmentation 3D.",
+          "Mettre en œuvre des pipelines de prétraitement incluant normalisation, échantillonnage et augmentation de données 3D.",
+          "Évaluer les performances des modèles via des métriques telles que mIoU, précision, rappel et temps d’inférence.",
+          "Travailler avec des outils comme Python, PyTorch, PDAL et des bibliothèques de vision par ordinateur.",
+          "Contribuer à l’automatisation de la génération de modèles BIM à partir de scans LiDAR pour les infrastructures ferroviaires."
+        ],
+        "technologies": ["Python", "PyTorch", "PDAL", "LiDAR", "Vision 3D", "BIM"]
+      },
+      {
+        "id": 2,
+        "company": "Airmium",
+        "employmentType": "Stage",
+        "position": "Stagiaire en Développement Logiciel",
+        "duration": "Avr 2024 – Juil 2024",
+        "description": "Développement d’un système sécurisé de gestion de données pour des outils de mesure et de traitement de l’air. Conception d’une base PostgreSQL, développement d’un backend Spring Boot et création d’une interface web responsive pour l’accès, l’automatisation et l’historisation des données — en remplacement des processus manuels sur Excel.",
+        "technologies": ["Java", "Spring Boot", "PostgreSQL", "Tailwind CSS", "CI/CD"]
+      },
+      {
+        "id": 3,
+        "company": "Université Lyon 1 – Projets académiques",
+        "position": "Chef de projet & Développeur",
+        "duration": "2023 – Présent",
+        "description": "Pilotage et contribution à des projets académiques, notamment un modèle Vision Transformer pour la restauration d’images, une application web de simulation des émissions de CO₂ (React/Spring Boot), des simulations de systèmes distribués (JBotSim) et des simulations de théorie des jeux multi-agents.",
+        "technologies": ["Python", "React", "TensorFlow", "PostgreSQL", "Docker"]
+      },
+      {
+        "id": 4,
+        "company": "Société à responsabilité limitée Manh Thai",
+        "employmentType": "Stage",
+        "position": "Stagiaire (Stage Ouvrier)",
+        "duration": "Juin 2020 – Juil 2020",
+        "description": "Assemblage d’ordinateurs et préparation d’expéditions durant un stage ouvrier de première année d’ingénierie. Développement de compétences pratiques en assemblage matériel et logistique chez Manh Thai (Vietnam).",
+        "technologies": ["Matériel informatique", "Logistique", "Ingénierie pratique"]
+      }
+    ]
   },
   "contact": {
     "title": "Me Contacter",

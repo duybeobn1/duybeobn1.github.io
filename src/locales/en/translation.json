@@ -9,8 +9,8 @@
   },
   "home": {
     "title": "Anh Vu",
-    "subtitle": "Master's Student in Artificial Intelligence (M2), Full-Stack Developer & AI Enthusiast",
-    "description": "Passionate about leveraging machine learning, computer vision, and web technologies to craft practical, scalable solutions with real-world impact.",
+    "subtitle": "M2 AI graduate student, seeking PhD opportunities in 3D data, AI, computer vision, and AI for nutrition/gastronomy, and open to full-time engineering roles in these fields.",
+    "description": "Passionate about turning research ideas into real-world systems through machine learning, computer vision, and full-stack development.",
     "viewWork": "View My Work",
     "getInTouch": "Get In Touch",
     "certifications": "Certifications",
@@ -47,8 +47,8 @@
     "title": "About Me",
     "subtitle": "Learn more about my background, skills, and what drives me as a developer.",
     "greeting": "Hi, I'm Anh Vu",
-    "description1": "I'm a Master's (M2) student in Computer Science at Université Lyon 1, specializing in AI and Data Science. I'm a passionate full-stack developer driven by crafting smart, user-centered digital solutions. My background blends web technologies with AI-driven projects, allowing me to tackle complex problems and design functional, beautiful experiences.",
-    "description2": "When I'm not coding, I'm often exploring new technologies, contributing to open-source initiatives, or enjoying a good coffee while reading up on the latest advancements in tech.",
+    "description1": "I'm an M2 Computer Science student at Université Lyon 1, specializing in AI and Data Science. I focus on 3D data, computer vision, and applied AI, especially at the intersection of nutrition and gastronomy.",
+    "description2": "I'm currently looking for PhD opportunities in 3D data, AI, computer vision, and AI for nutrition/gastronomy, and I am also open to full-time engineering positions in these domains. I'm passionate about building useful, human-centered AI solutions from research to deployment.",
     "skills": "Skills",
     "frontend": "Frontend",
     "backend": "Backend",
@@ -85,7 +85,7 @@
       "airmiumSystem": "Analyzed data workflows and user requirements, Designed and implemented a secure, scalable system for data historization and quality control, Developed web interfaces for accessing and visualizing real-time air treatment data, Proposed solutions for backup strategies and mobile/web accessibility.",
       "edgeDetectionProject": "This project implements advanced edge detection techniques using differential operators (Prewitt, Sobel, Kirsch) combined with thresholding and refinement processes to highlight contours in images.",
       "visionTransformer": "This project explores the capabilities of Vision Transformers (ViTs) by segmenting images into fixed-size patches and attempting to reconstruct the original image using attention-based mechanisms. By experimenting with small patch permutations (e.g., 4×4), the model evaluates whether global context can be preserved and restored from shuffled or occluded image segments. The goal is to investigate the effectiveness of transformer attention in recovering image structure, paving the way for applications in image inpainting, resizing, or restoration.",
-      "cookingAssistant": "This web application is designed to help users manage their cooking more efficiently by combining intelligent ingredient tracking with personalized recipe management. Users can store ingredients with expiration dates, create and plan meals, and receive recipe suggestions based on what they have at home. It also supports OCR-based scanning of food labels or handwritten notes, helping digitize and organize cooking data seamlessly.",
+      "cookingAssistant": "Inventory Culinary Assistance project progress: completed Step 1 - Vision & Ingestion Pipeline (#1), Step 2 - Dynamic Inventory & Flavor Matrix (#2), Neo4j knowledge graph architecture and automated ingestion pipeline (#5), and scaling the Culinary Philosophy dataset with supervised fine-tuning (#9). I am currently gathering data for the next step.",
       "foodMining": "A comprehensive food data analysis platform designed to identify and characterize culinary cultures from over 250,000 recipes from Food.com. Developed data mining modules for extraction, structuring, and large-scale visualization of food data. Implemented classification and clustering algorithms to reveal cultural trends, nutritional habits, and correlations between ingredients, dishes, and regions. Future development includes integration of nutritional aspects related to traditional Asian medicine.",
       "biomedicalRNN": "A biomedical text classifier based on Recurrent Neural Networks (RNN) using PyTorch. Designed and trained natural language processing models to extract and categorize textual information from specialized biomedical corpora. Implemented complete pipelines for preprocessing, vectorization, and evaluation on real-world datasets. Achieved high accuracy on scientific abstract classification and automatic identification of medical themes, demonstrating model robustness in real-world contexts.",
       "fashionNumbers": "Development of an image classification model using neural networks for automatic identification of fashion items and digits from standard datasets (Fashion MNIST, MNIST). Designed preprocessing and data augmentation pipelines to improve model robustness. Evaluated on real test sets with excellent accuracy rates, demonstrating the model's effectiveness for visual recognition in varied contexts.",
@@ -99,7 +99,55 @@
     "subtitle": "My professional and academic background in software engineering, AI, and web development.",
     "workExperience": "Work & Project Experience",
     "education": "Education",
-    "otherExperiences": "Other Experiences"
+    "otherExperiences": "Other Experiences",
+    "items": [
+      {
+        "id": 1,
+        "company": "SNCF Réseau",
+        "employmentType": "Internship",
+        "position": "AI & 3D Computer Vision Intern – LiDAR Point Cloud Segmentation for BIM Generation",
+        "duration": "Mar 2026 – Present · 3 mos",
+        "location": "St.-Denis, Île-de-France, France · On-site",
+        "description": "AI Research Intern working on 3D point cloud segmentation for automatic BIM model generation in dense railway environments.",
+        "responsibilities": [
+          "Conducting literature reviews on 3D semantic and instance segmentation methods for LiDAR point clouds.",
+          "Designing and building a labeled dataset for dense railway scenes (stations, multi-track areas).",
+          "Defining annotation schemas and developing an annotation workflow with quality control.",
+          "Developing and training deep learning models for 3D segmentation.",
+          "Implementing preprocessing pipelines including normalization, sampling, and 3D data augmentation.",
+          "Evaluating model performance using metrics such as mIoU, precision, recall, and inference time.",
+          "Working with tools such as Python, PyTorch, PDAL, and computer vision libraries.",
+          "Contributing to the automation of BIM model generation from LiDAR scans for railway infrastructure."
+        ],
+        "technologies": ["Python", "PyTorch", "PDAL", "LiDAR", "3D Computer Vision", "BIM"]
+      },
+      {
+        "id": 2,
+        "company": "Airmium",
+        "employmentType": "Internship",
+        "position": "Software Development Intern",
+        "duration": "Apr 2024 – Jul 2024",
+        "description": "Developed a secure data management system for air measurement and treatment tools. Designed a PostgreSQL database, built a Spring Boot backend, and created a responsive web interface for data access, automation, and historization — replacing manual Excel processes.",
+        "technologies": ["Java", "Spring Boot", "PostgreSQL", "Tailwind CSS", "CI/CD"]
+      },
+      {
+        "id": 3,
+        "company": "Université Lyon 1 – Academic Projects",
+        "position": "Project Lead & Developer",
+        "duration": "2023 – Present",
+        "description": "Led and contributed to academic projects including a Vision Transformer image restoration model, a CO₂ emission simulation web app (React/Spring Boot), distributed systems simulations (JBotSim), and multi-agent game theory simulations.",
+        "technologies": ["Python", "React", "TensorFlow", "PostgreSQL", "Docker"]
+      },
+      {
+        "id": 4,
+        "company": "Société à responsabilité limitée Manh Thai",
+        "employmentType": "Internship",
+        "position": "Intern (Stage Ouvrier)",
+        "duration": "Jun 2020 – Jul 2020",
+        "description": "Assembled computers and prepared shipments during a first-year engineering internship. Developed hands-on skills in hardware assembly and logistics at Manh Thai (Vietnam).",
+        "technologies": ["Computer Hardware", "Logistics", "Hands-On Engineering"]
+      }
+    ]
   },
   "contact": {
     "title": "Get In Touch",

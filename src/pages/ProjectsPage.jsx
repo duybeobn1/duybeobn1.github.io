@@ -338,6 +338,14 @@ let projects = [
       live: "#",
     },
   ];
+  const displayedProjects = projects
+    .filter((project) => !project.title.includes('Deprecated'))
+    .reverse()
+    .sort((a, b) => {
+      if (a.key === 'cookingAssistant') return -1;
+      if (b.key === 'cookingAssistant') return 1;
+      return 0;
+    });
 
   return (
     <div className="min-h-screen pt-20 px-4 sm:px-6 lg:px-8 bg-minimal text-default">
@@ -354,14 +362,15 @@ let projects = [
 
         {/* Lined list */}
         <div className="row-list">
-          {projects
-            .filter(project => !project.title.includes('Deprecated'))
-            .reverse()
-            .map((project, idx) => {
+          {displayedProjects.map((project, idx) => {
+              const isFeaturedProject = project.key === 'cookingAssistant';
               const accents = ['hl-pink','hl-yellow','hl-blue','hl-green'];
-              const accent = accents[idx % accents.length];
+              const accent = isFeaturedProject ? 'hl-yellow' : accents[idx % accents.length];
               return (
-                <div key={project.id} className="row-item">
+                <div
+                  key={project.id}
+                  className={`row-item ${isFeaturedProject ? 'bg-[rgba(255,242,204,0.38)] ring-1 ring-[var(--line)] rounded-xl px-3' : ''}`}
+                >
                   {/* Title */}
                   <div className="row-title text-xl">
                     <span className={`hl-bar ${accent}`}>{project.title}</span>

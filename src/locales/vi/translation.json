@@ -9,8 +9,8 @@
   },
   "home": {
     "title": "Anh Vu",
-    "subtitle": "Sinh viên Thạc sĩ Trí tuệ Nhân tạo (M2), Lập trình viên Full-Stack và Đam mê AI",
-    "description": "Đam mê tận dụng học máy, thị giác máy tính và công nghệ web để tạo ra những giải pháp thực tế, có thể mở rộng với tác động thực tế.",
+    "subtitle": "Học viên cao học M2 ngành AI, đang tìm cơ hội PhD về dữ liệu 3D, AI, thị giác máy tính và AI cho dinh dưỡng/ẩm thực, đồng thời tìm cơ hội CDI trong các lĩnh vực này.",
+    "description": "Đam mê biến ý tưởng nghiên cứu thành hệ thống ứng dụng thực tế thông qua machine learning, thị giác máy tính và phát triển full-stack.",
     "viewWork": "Xem Công việc của Tôi",
     "getInTouch": "Liên hệ",
     "certifications": "Chứng chỉ",
@@ -47,8 +47,8 @@
     "title": "Giới thiệu",
     "subtitle": "Tìm hiểu thêm về bối cảnh, kỹ năng và điều gì thúc đẩy tôi làm lập trình viên.",
     "greeting": "Xin chào, tôi là Anh Vu",
-    "description1": "Tôi là sinh viên Thạc sĩ (M2) ngành Khoa học Máy tính tại Đại học Lyon 1, chuyên về AI và Khoa học Dữ liệu. Tôi là một lập trình viên full-stack đầy đam mê, được thúc đẩy bởi việc tạo ra các giải pháp số thông minh và lấy người dùng làm trung tâm. Bối cảnh của tôi kết hợp công nghệ web với các dự án hướng đến AI, cho phép tôi giải quyết các vấn đề phức tạp và thiết kế các trải nghiệm chức năng và đẹp mắt.",
-    "description2": "Khi không code, tôi thường khám phá các công nghệ mới, đóng góp cho các sáng kiến mã nguồn mở, hoặc thưởng thức một tách cà phê ngon trong khi đọc về những tiến bộ mới nhất trong công nghệ.",
+    "description1": "Tôi là học viên M2 ngành Khoa học Máy tính tại Đại học Lyon 1, chuyên sâu về AI và Khoa học Dữ liệu. Tôi tập trung vào dữ liệu 3D, thị giác máy tính và AI ứng dụng, đặc biệt ở giao điểm giữa dinh dưỡng và ẩm thực.",
+    "description2": "Hiện tại tôi đang tìm cơ hội PhD về dữ liệu 3D, AI, thị giác máy tính và AI cho dinh dưỡng/ẩm thực, đồng thời cũng mở cho các vị trí CDI trong các lĩnh vực này. Tôi đam mê xây dựng các giải pháp AI hữu ích, lấy con người làm trung tâm, từ nghiên cứu đến triển khai.",
     "skills": "Kỹ năng",
     "frontend": "Frontend",
     "backend": "Backend",
@@ -85,7 +85,7 @@
       "airmiumSystem": "Phân tích quy trình dữ liệu và yêu cầu người dùng, Thiết kế và triển khai hệ thống an toàn, có thể mở rộng cho việc lưu trữ dữ liệu và kiểm soát chất lượng, Phát triển giao diện web để truy cập và trực quan hóa dữ liệu xử lý không khí theo thời gian thực, Đề xuất giải pháp cho chiến lược sao lưu và khả năng truy cập di động/web.",
       "edgeDetectionProject": "Dự án này triển khai các kỹ thuật phát hiện biên tiên tiến sử dụng các toán tử vi phân (Prewitt, Sobel, Kirsch) kết hợp với các quá trình ngưỡng và tinh chế để làm nổi bật đường viền trong hình ảnh.",
       "visionTransformer": "Dự án này khám phá khả năng của Vision Transformers (ViTs) bằng cách phân đoạn hình ảnh thành các miếng có kích thước cố định và cố gắng tái tạo hình ảnh gốc sử dụng các cơ chế chú ý. Bằng cách thử nghiệm với các hoán vị miếng nhỏ (ví dụ: 4×4), mô hình đánh giá liệu bối cảnh toàn cục có thể được bảo tồn và khôi phục từ các đoạn hình ảnh bị xáo trộn hoặc che khuất hay không. Mục tiêu là điều tra hiệu quả của sự chú ý của transformer trong việc khôi phục cấu trúc hình ảnh, mở đường cho các ứng dụng trong việc sửa chữa hình ảnh, thay đổi kích thước hoặc khôi phục.",
-      "cookingAssistant": "Ứng dụng web này được thiết kế để giúp người dùng quản lý việc nấu ăn hiệu quả hơn bằng cách kết hợp theo dõi nguyên liệu thông minh với quản lý công thức cá nhân hóa. Người dùng có thể lưu trữ nguyên liệu với ngày hết hạn, tạo và lên kế hoạch bữa ăn, và nhận gợi ý công thức dựa trên những gì họ có ở nhà. Nó cũng hỗ trợ quét dựa trên OCR các nhãn thực phẩm hoặc ghi chú viết tay, giúp số hóa và tổ chức dữ liệu nấu ăn một cách liền mạch.",
+      "cookingAssistant": "Tiến độ dự án Inventory Culinary Assistance: đã hoàn thành Step 1 - Vision & Ingestion Pipeline (#1), Step 2 - Dynamic Inventory & Flavor Matrix (#2), kiến trúc Neo4j Knowledge Graph và Automated Ingestion Pipeline (#5), và mở rộng bộ dữ liệu Culinary Philosophy kèm supervised fine-tuning (#9). Hiện tại tôi đang thu thập dữ liệu cho bước tiếp theo.",
       "foodMining": "Một nền tảng phân tích dữ liệu thực phẩm toàn diện được thiết kế để xác định và đặc trưng hóa các nền văn hóa ẩm thực từ hơn 250.000 công thức từ Food.com. Phát triển các mô-đun khai thác dữ liệu để trích xuất, cấu trúc hóa và trực quan hóa dữ liệu thực phẩm quy mô lớn. Triển khai các thuật toán phân loại và phân cụm để tiết lộ xu hướng văn hóa, thói quen dinh dưỡng và mối tương quan giữa nguyên liệu, món ăn và khu vực. Phát triển trong tương lai bao gồm tích hợp các khía cạnh dinh dưỡng liên quan đến y học cổ truyền châu Á.",
       "biomedicalRNN": "Một bộ phân loại văn bản y sinh dựa trên Mạng Nơ-ron Hồi tiếp (RNN) sử dụng PyTorch. Thiết kế và huấn luyện các mô hình xử lý ngôn ngữ tự nhiên để trích xuất và phân loại thông tin văn bản từ các kho dữ liệu y sinh chuyên môn. Triển khai các pipeline hoàn chỉnh cho tiền xử lý, vector hóa và đánh giá trên các tập dữ liệu thực tế. Đạt được độ chính xác cao trong phân loại tóm tắt khoa học và xác định tự động các chủ đề y tế, chứng minh độ bền vững của mô hình trong bối cảnh thực tế.",
       "fashionNumbers": "Phát triển mô hình phân loại hình ảnh sử dụng mạng nơ-ron để nhận dạng tự động các món đồ thời trang và chữ số từ các tập dữ liệu tiêu chuẩn (Fashion MNIST, MNIST). Thiết kế các pipeline tiền xử lý và tăng cường dữ liệu để cải thiện độ bền vững của mô hình. Đánh giá trên các tập kiểm tra thực tế với tỷ lệ chính xác xuất sắc, chứng minh hiệu quả của mô hình cho nhận dạng thị giác trong các bối cảnh khác nhau.",
@@ -99,7 +99,55 @@
     "subtitle": "Bối cảnh chuyên môn và học thuật của tôi trong kỹ thuật phần mềm, AI và phát triển web.",
     "workExperience": "Kinh nghiệm Làm việc và Dự án",
     "education": "Học vấn",
-    "otherExperiences": "Kinh nghiệm Khác"
+    "otherExperiences": "Kinh nghiệm Khác",
+    "items": [
+      {
+        "id": 1,
+        "company": "SNCF Réseau",
+        "employmentType": "Thực tập",
+        "position": "Thực tập sinh AI & Thị giác máy tính 3D – Phân đoạn đám mây điểm LiDAR cho tạo mô hình BIM",
+        "duration": "Thg 3/2026 – Hiện tại · 3 tháng",
+        "location": "St.-Denis, Île-de-France, Pháp · Làm việc tại văn phòng",
+        "description": "Thực tập sinh nghiên cứu AI, làm việc về phân đoạn đám mây điểm 3D để tự động tạo mô hình BIM trong môi trường đường sắt mật độ cao.",
+        "responsibilities": [
+          "Thực hiện tổng quan tài liệu về các phương pháp phân đoạn ngữ nghĩa và phân đoạn instance 3D cho đám mây điểm LiDAR.",
+          "Thiết kế và xây dựng bộ dữ liệu gán nhãn cho các cảnh đường sắt mật độ cao (nhà ga, khu vực nhiều đường ray).",
+          "Xây dựng schema gán nhãn và phát triển quy trình annotation có kiểm soát chất lượng.",
+          "Phát triển và huấn luyện các mô hình deep learning cho bài toán phân đoạn 3D.",
+          "Triển khai các pipeline tiền xử lý gồm chuẩn hóa, lấy mẫu và tăng cường dữ liệu 3D.",
+          "Đánh giá hiệu năng mô hình bằng các chỉ số như mIoU, precision, recall và thời gian suy luận.",
+          "Làm việc với các công cụ như Python, PyTorch, PDAL và các thư viện thị giác máy tính.",
+          "Góp phần tự động hóa quá trình tạo mô hình BIM từ dữ liệu quét LiDAR cho hạ tầng đường sắt."
+        ],
+        "technologies": ["Python", "PyTorch", "PDAL", "LiDAR", "Thị giác máy tính 3D", "BIM"]
+      },
+      {
+        "id": 2,
+        "company": "Airmium",
+        "employmentType": "Thực tập",
+        "position": "Thực tập sinh Phát triển Phần mềm",
+        "duration": "Thg 4/2024 – Thg 7/2024",
+        "description": "Phát triển hệ thống quản lý dữ liệu bảo mật cho các công cụ đo lường và xử lý không khí. Thiết kế cơ sở dữ liệu PostgreSQL, xây dựng backend Spring Boot và phát triển giao diện web responsive cho truy cập, tự động hóa và lưu vết dữ liệu — thay thế quy trình Excel thủ công.",
+        "technologies": ["Java", "Spring Boot", "PostgreSQL", "Tailwind CSS", "CI/CD"]
+      },
+      {
+        "id": 3,
+        "company": "Đại học Lyon 1 – Dự án học thuật",
+        "position": "Trưởng nhóm dự án & Lập trình viên",
+        "duration": "2023 – Hiện tại",
+        "description": "Dẫn dắt và đóng góp vào các dự án học thuật gồm mô hình Vision Transformer phục hồi ảnh, ứng dụng web mô phỏng phát thải CO₂ (React/Spring Boot), mô phỏng hệ phân tán (JBotSim) và mô phỏng lý thuyết trò chơi đa tác nhân.",
+        "technologies": ["Python", "React", "TensorFlow", "PostgreSQL", "Docker"]
+      },
+      {
+        "id": 4,
+        "company": "Công ty TNHH Manh Thai",
+        "employmentType": "Thực tập",
+        "position": "Thực tập sinh (Stage Ouvrier)",
+        "duration": "Thg 6/2020 – Thg 7/2020",
+        "description": "Lắp ráp máy tính và chuẩn bị đơn hàng trong kỳ thực tập kỹ sư năm nhất. Phát triển kỹ năng thực hành về phần cứng và logistics tại Manh Thai (Việt Nam).",
+        "technologies": ["Phần cứng máy tính", "Logistics", "Kỹ năng thực hành kỹ thuật"]
+      }
+    ]
   },
   "contact": {
     "title": "Liên hệ",

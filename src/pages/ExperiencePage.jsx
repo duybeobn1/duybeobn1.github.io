@@ -2,41 +2,8 @@ import { useTranslation } from 'react-i18next';
 
 function ExperiencePage() {
   const { t } = useTranslation();
-  const experiences = [
-    {
-      id: 0,
-      company: "Société à responsabilité limitée Manh Thai",
-      position: "Intern (Stage Ouvrier)",
-      duration: "June 2020 – July 2020",
-      description:
-        "Assembled computers and prepared shipments during a first-year engineering internship. Developed hands-on skills in hardware assembly and logistics at Manh Thai (Vietnam).",
-      technologies: ["Computer Hardware", "Logistics", "Hands-On Engineering"],
-    },
-    {
-      id: 1,
-      company: "Airmium",
-      position: "Software Development Intern",
-      duration: "Apr 2024 – Jul 2024",
-      description:
-        "Developed a secure data management system for air measurement and treatment tools. Designed a PostgreSQL database, built a Spring Boot backend, and created a responsive web interface for data access, automation, and historization — replacing manual Excel processes.",
-      technologies: [
-        "Java",
-        "Spring Boot",
-        "PostgreSQL",
-        "Tailwind CSS",
-        "CI/CD",
-      ],
-    },
-    {
-      id: 2,
-      company: "Université Lyon 1 – Academic Projects",
-      position: "Project Lead & Developer",
-      duration: "2023 – Present",
-      description:
-        "Led and contributed to academic projects including a Vision Transformer image restoration model, a CO₂ emission simulation web app (React/Spring Boot), distributed systems simulations (JBotSim), and multi-agent game theory simulations.",
-      technologies: ["Python", "React", "TensorFlow", "PostgreSQL", "Docker"],
-    },
-  ];
+  const rawExperiences = t("experience.items", { returnObjects: true });
+  const experiences = Array.isArray(rawExperiences) ? rawExperiences : [];
 
   const education = [
     {
@@ -92,7 +59,7 @@ function ExperiencePage() {
                   <div className="w-8 h-8 bg-[var(--yellow)] rounded-full flex items-center justify-center mt-1 flex-shrink-0">
                     <div className="w-3 h-3 bg-white rounded-full"></div>
                   </div>
-                  <div className="flex-1 bg-white p-6 rounded-lg shadow-md">
+                  <div className="flex-1 bg-white p-6 rounded-lg shadow-md text-left">
                     <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
                       <h3 className="text-xl font-semibold text-gray-900">
                         {exp.position}
@@ -103,19 +70,34 @@ function ExperiencePage() {
                     </div>
                     <h4 className="text-lg text-gray-700 mb-3">
                       {exp.company}
+                      {exp.employmentType ? ` · ${exp.employmentType}` : ""}
                     </h4>
-                    <p className="text-gray-600 mb-4 leading-relaxed">
+                    {exp.location && (
+                      <p className="text-sm text-gray-500 mb-3">
+                        {exp.location}
+                      </p>
+                    )}
+                    <p className="text-gray-600 mb-3 leading-relaxed text-left">
                       {exp.description}
                     </p>
+                    {Array.isArray(exp.responsibilities) &&
+                      exp.responsibilities.length > 0 && (
+                        <ul className="list-disc list-inside text-gray-600 mb-4 leading-relaxed space-y-1 text-left">
+                          {exp.responsibilities.map((item, itemIndex) => (
+                            <li key={itemIndex}>{item}</li>
+                          ))}
+                        </ul>
+                      )}
                     <div className="flex flex-wrap gap-2">
-                      {exp.technologies.map((tech, techIndex) => (
-                        <span
-                          key={techIndex}
-                          className="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full"
-                        >
-                          {tech}
-                        </span>
-                      ))}
+                      {Array.isArray(exp.technologies) &&
+                        exp.technologies.map((tech, techIndex) => (
+                          <span
+                            key={techIndex}
+                            className="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full"
+                          >
+                            {tech}
+                          </span>
+                        ))}
                     </div>
                   </div>
                 </div>
