@@ -4,6 +4,7 @@
     "about": "À propos",
     "projects": "Projets",
     "experience": "Expérience",
+    "research": "Recherche",
     "passions": "Passions",
     "contact": "Contact"
   },
@@ -15,7 +16,9 @@
     "getInTouch": "Me Contacter",
     "certifications": "Certifications",
     "featuredProjects": "Projets Vedettes",
+    "featuredResearch": "Recherche Vedette",
     "viewAllProjects": "Voir Tous les Projets",
+    "viewAllResearch": "Voir Toutes les Recherches",
     "personalStatement": "Je crois en la capacité de la technologie à transformer les idées en réalité,",
     "personalStatementHighlight": " en créant des solutions qui font la différence.",
     "ctaTitle": "Construisons Quelque Chose d'Extraordinaire Ensemble",
@@ -40,6 +43,20 @@
       "reinforcementLearning": {
         "title": "Apprentissage par Renforcement Multi-Agents",
         "description": "Agents intelligents avec DQN, Q-learning et MDP dans des environnements simulés"
+      }
+    },
+    "research": {
+      "keigo": {
+        "title": "KEIGO-SYNC",
+        "description": "Étude de l'impact de la politesse grammaticale japonaise sur la véracité des LLMs — la politesse rend-elle l'IA moins honnête?"
+      },
+      "ica": {
+        "title": "Inventory Culinary Assistance",
+        "description": "Plateforme culinaire IA connectant l'inventaire du frigo, les principes TCM et la découverte de recettes via Neo4j et LLMs"
+      },
+      "foodBank": {
+        "title": "Food Bank Clustering",
+        "description": "Analyse spatiale et démographique par clustering des banques alimentaires pour identifier les zones mal desservies"
       }
     }
   },
@@ -94,7 +111,8 @@
       "reinforcementLearning": "Développement d'une série de projets avancés autour des agents intelligents et de l'apprentissage par renforcement utilisant Python et Jupyter Notebook. Implémentation d'algorithmes de recherche, de Deep Q-Networks (DQN), et de stratégies d'évaluation de politique dans des environnements simulés (Pacman, recherche directe). Utilisation de Processus Décisionnels de Markov (MDP), value iteration et Q-learning pour la résolution de tâches complexes de prise de décision séquentielle. Analyse expérimentale et optimisation des performances des agents pour des systèmes multi-agents et scénarios d'apprentissage automatique.",
       "keigoSync": "Un cadre d'évaluation contrôlé mesurant l'impact des honorifiques japonais (Keigo) sur la fiabilité factuelle et l'accord sycophante dans les LLMs. Étudie le compromis politesse-vérité à travers un ensemble de pièges de sycophancie traduits en registres japonais décontracté, standard et hyper-honorifique.",
       "dataVizEVGA": "Un projet de visualisation de données interactif explorant comment la consommation d'énergie, les conditions climatiques et l'efficacité de l'eau (WUE) interagissent dans les centres de données en Afrique. Construit avec D3.js v7, le projet comprend une carte choroplèthe de l'intensité de consommation d'énergie, des diagrammes de dispersion des énergies renouvelables par rapport à l'efficacité de l'eau, et d'autres graphiques visant à promouvoir une gestion durable de l'eau.",
-      "postureHumanoid": "Un projet d'apprentissage profond pour la synthèse d'images guidée par la posture d'une personne. À partir d'une vidéo d'une personne source et d'une personne cible, le modèle génère une nouvelle vidéo de la cible effectuant les mêmes mouvements que la source. Implémente un Smooth U-Net avec auto-attention et entraînement WGAN-GP pour éliminer les artefacts en damier."
+      "postureHumanoid": "Un projet d'apprentissage profond pour la synthèse d'images guidée par la posture d'une personne. À partir d'une vidéo d'une personne source et d'une personne cible, le modèle génère une nouvelle vidéo de la cible effectuant les mêmes mouvements que la source. Implémente un Smooth U-Net avec auto-attention et entraînement WGAN-GP pour éliminer les artefacts en damier.",
+      "danaVeganHouse": "Un site web moderne et responsive pour Dāna Vegan House, un restaurant végétarien au Vietnam mêlant tradition vietnamienne et cuisine végétale créative. Construit avec React, TypeScript et Vite, avec une interface épurée, un menu interactif et une navigation fluide."
     }
   },
   "experience": {
@@ -231,6 +249,24 @@
         "description": "Vivant entre l'héritage vietnamien et la culture française, travaillant avec des équipes internationales, performant des arts traditionnels - toutes ces expériences m'enseignent que les meilleures solutions viennent de la compréhension et du respect de différentes perspectives. Dans le code, comme dans la vie, la diversité est une force."
       }
     }
+  },
+  "research": {
+    "title": "Documents de Recherche & Publications",
+    "subtitle": "Une sélection de mes articles de recherche, rapports et projets académiques couvrant l'IA, le NLP, la vision par ordinateur, le data mining et l'IA culinaire.",
+    "viewPaper": "Voir l'article",
+    "publications": [
+      "Génération vidéo guidée par posture utilisant Smooth U-Net avec auto-attention et entraînement WGAN-GP.",
+      "Cadre d'évaluation mesurant l'impact des honorifiques japonais (Keigo) sur la fiabilité factuelle des LLMs.",
+      "Visualisation interactive D3.js explorant la consommation d'énergie, le climat et l'efficacité de l'eau dans les data centers africains.",
+      "Projet ML sur graphes pour la prédiction de liens avec GAE/VGAE et études d'ablation.",
+      "Framework complet pour l'Argumentation Basée sur les Hypothèses (ABA+) intégrant DeBERTa-v2 et graphes PyVis.",
+      "Exploration des Vision Transformers pour restaurer des images à partir de patches mélangés via mécanismes d'attention.",
+      "Analyse de plus de 250 000 recettes de Food.com avec algorithmes de classification et clustering pour révéler les tendances culinaires.",
+      "Plateforme IA full-stack connectant inventaire frigo, principes TCM et découverte de recettes via Neo4j et LLMs.",
+      "Classification de textes biomédicaux avec RNN sous PyTorch, extrayant des informations de corpus spécialisés.",
+      "Analyse spatiale par clustering des banques alimentaires pour identifier les zones mal desservies.",
+      "Application de soutien en santé mentale par IA utilisant le NLP pour des conversations empathiques."
+    ]
   },
   "recipe": {
     "prepTime": "Temps de Préparation",

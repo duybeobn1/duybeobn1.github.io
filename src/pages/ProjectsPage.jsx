@@ -388,6 +388,22 @@ let projects = [
       github: "https://github.com/duybeobn1/PostureHumanoid",
       live: "#",
     },
+    {
+      id: 26,
+      title: "Dāna Vegan House – Vegan Restaurant Website",
+      key: "danaVeganHouse",
+      description:
+        "A modern, responsive website for Dāna Vegan House, a vegetarian restaurant in Vietnam blending Vietnamese tradition with creative plant-based cuisine. Built with React, TypeScript, and Vite, featuring a clean UI, menu showcase, and smooth navigation.",
+      technologies: [
+        "React",
+        "TypeScript",
+        "Vite",
+        "Tailwind CSS",
+        "Vercel",
+      ],
+      github: "https://github.com/duybeobn1/DanaVeganHouse",
+      live: "https://danaveganhouse.com",
+    },
   ];
   const displayedProjects = projects
     .filter((project) => !project.title.includes('Deprecated'))

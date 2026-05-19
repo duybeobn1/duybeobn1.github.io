@@ -50,6 +50,7 @@ function Footer() {
     { name: t('nav.about'), path: "/about" },
     { name: t('nav.projects'), path: "/projects" },
     { name: t('nav.experience'), path: "/experience" },
+    { name: t('nav.research'), path: "/research" },
     { name: t('nav.contact'), path: "/contact" },
   ];
 
@@ -95,7 +96,7 @@ function Footer() {
                 <li key={link.name}>
                   <Link
                     to={link.path}
-                    className="text-gray-700 hover:text-gray-900 transition-colors duration-200 inline-block"
+                    className="text-gray-700 hover:text-gray-900 transition-colors duration-200 inline-block click-press"
                   >
                     {link.name}
                   </Link>

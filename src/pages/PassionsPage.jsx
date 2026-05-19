@@ -395,7 +395,7 @@ const PassionsPage = () => {
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
-                className={`flex items-center px-6 py-3 rounded-full font-medium transition-all duration-300 border border-line ${
+                className={`flex items-center px-6 py-3 rounded-full font-medium transition-all duration-300 border border-line click-press ${
                   activeTab === tab.id
                     ? "bg-[var(--yellow)]"
                     : "bg-minimal hover:bg-[rgba(218,227,243,0.3)]"

@@ -4,6 +4,7 @@
     "about": "About",
     "projects": "Projects",
     "experience": "Experience",
+    "research": "Research",
     "passions": "Passions",
     "contact": "Contact"
   },
@@ -15,7 +16,9 @@
     "getInTouch": "Get In Touch",
     "certifications": "Certifications",
     "featuredProjects": "Featured Projects",
+    "featuredResearch": "Featured Research",
     "viewAllProjects": "View All Projects",
+    "viewAllResearch": "View All Research",
     "personalStatement": "I believe in the power of technology to transform ideas into reality,",
     "personalStatementHighlight": " creating solutions that make a difference.",
     "ctaTitle": "Let's Build Something Amazing Together",
@@ -40,6 +43,20 @@
       "reinforcementLearning": {
         "title": "Multi-Agent Reinforcement Learning",
         "description": "Intelligent agents with DQN, Q-learning, and MDP in simulated environments"
+      }
+    },
+    "research": {
+      "keigo": {
+        "title": "KEIGO-SYNC",
+        "description": "Investigating grammatical politeness and sycophancy in multilingual LLMs — does polite Japanese make AI less truthful?"
+      },
+      "ica": {
+        "title": "Inventory Culinary Assistance",
+        "description": "AI-powered culinary platform connecting fridge inventory, TCM principles, and recipe discovery via Neo4j knowledge graph and LLMs"
+      },
+      "foodBank": {
+        "title": "Food Bank Clustering",
+        "description": "Spatial and demographic clustering analysis of food banks to identify underserved areas and optimize resource allocation"
       }
     }
   },
@@ -94,7 +111,8 @@
       "reinforcementLearning": "Development of a series of advanced projects around intelligent agents and reinforcement learning using Python and Jupyter Notebook. Implementation of search algorithms, Deep Q-Networks (DQN), and policy evaluation strategies in simulated environments (Pacman, direct search). Utilization of Markov Decision Processes (MDP), value iteration, and Q-learning for solving complex sequential decision-making tasks. Experimental analysis and performance optimization of agents for multi-agent systems and machine learning scenarios.",
       "keigoSync": "A controlled evaluation framework measuring the impact of Japanese honorifics (Keigo) on factual reliability and sycophantic agreement in LLMs. Investigates the politeness-truthfulness trade-off through a curated dataset of sycophancy traps translated into casual, standard, and hyper-honorific Japanese registers. Evaluates state-of-the-art and open-source models using an LLM-as-a-Judge approach with manual audit to determine whether forced grammatical politeness increases sycophantic behavior.",
       "dataVizEVGA": "An interactive data visualization project exploring how energy consumption, climate conditions, and water efficiency (WUE) interact in data centers across Africa. Built with D3.js v7, the project features a choropleth map of energy consumption intensity, scatterplots of renewables vs. water efficiency, boxplots of cooling water efficiency by climate region, and bar charts of water losses due to leakages. Promotes awareness about sustainable water management in the energy and tech sectors.",
-      "postureHumanoid": "A deep learning project for posture-guided image synthesis of a person. From a video of a source person and a target person, the model generates a new video of the target performing the same movements as the source. Implements a Smooth U-Net with self-attention and WGAN-GP training to eliminate checkerboard artifacts, with support for Apple Silicon (MPS) acceleration. Explores multiple architectures including vanilla neural networks and GANs with skip connections and adaptive discriminators."
+      "postureHumanoid": "A deep learning project for posture-guided image synthesis of a person. From a video of a source person and a target person, the model generates a new video of the target performing the same movements as the source. Implements a Smooth U-Net with self-attention and WGAN-GP training to eliminate checkerboard artifacts, with support for Apple Silicon (MPS) acceleration. Explores multiple architectures including vanilla neural networks and GANs with skip connections and adaptive discriminators.",
+      "danaVeganHouse": "A modern, responsive website for Dāna Vegan House, a vegetarian restaurant in Vietnam blending Vietnamese tradition with creative plant-based cuisine. Built with React, TypeScript, and Vite, featuring a clean UI, menu showcase, and smooth navigation."
     }
   },
   "experience": {
@@ -109,7 +127,7 @@
         "company": "SNCF Réseau",
         "employmentType": "Internship",
         "position": "AI & 3D Computer Vision Intern – LiDAR Point Cloud Segmentation for BIM Generation",
-        "duration": "Mar 2026 – Present · 3 mos",
+        "duration": "Mar 2026 – Present · 3 months",
         "location": "St.-Denis, Île-de-France, France · On-site",
         "description": "AI Research Intern working on 3D point cloud segmentation for automatic BIM model generation in dense railway environments.",
         "responsibilities": [
@@ -231,6 +249,24 @@
         "description": "Living between Vietnamese heritage and French culture, working with international teams, performing traditional arts - all of these experiences teach me that the best solutions come from understanding and respecting different perspectives. In code, as in life, diversity is strength."
       }
     }
+  },
+  "research": {
+    "title": "Research Documents & Publications",
+    "subtitle": "A curated collection of my research papers, reports, and academic projects covering AI, NLP, computer vision, data mining, and culinary AI.",
+    "viewPaper": "View Paper",
+    "publications": [
+      "GAN-based video generation for pose transfer using Smooth U-Net with self-attention and WGAN-GP training. Generates realistic video frames of a target person performing movements of a source from skeleton pose inputs.",
+      "A controlled evaluation framework measuring the impact of Japanese honorifics (Keigo) on factual reliability and sycophantic agreement in LLMs. Quantifies the politeness-truthfulness trade-off across casual, standard, and hyper-honorific Japanese registers.",
+      "Interactive D3.js data visualization exploring how energy consumption, climate conditions, and water efficiency (WUE) interact in data centers across Africa. Highlights the impact of renewable vs. fossil fuel energy mixes on water footprint.",
+      "Graph Machine Learning project on link prediction using Graph Autoencoders (GAE) and Variational Graph Autoencoders (VGAE) with ablation studies including Linear-VGAE, feature subsets, and topology vs. attribute isolation.",
+      "Complete framework for Assumption-Based Argumentation with preference extensions (ABA+). Integrates fine-tuned DeBERTa-v2 for automatic attack detection, with forward chaining argument generation and interactive PyVis graphs.",
+      "Explores Vision Transformers by segmenting images into fixed-size patches and reconstructing original images using attention-based mechanisms. Investigates global context preservation from shuffled or occluded image segments.",
+      "Comprehensive food data analysis platform analyzing over 250,000 recipes from Food.com. Implements classification and clustering algorithms to reveal cultural trends, nutritional habits, and ingredient correlations across regions.",
+      "Full-stack AI platform connecting fridge inventory, TCM dietary principles, and recipe discovery via Neo4j knowledge graph, fine-tuned LLMs (Llama-3-8B), and computer vision. Features Graph-RAG recipe engine, TCM menu generation, and molecular/philosophical ingredient substitutions.",
+      "Biomedical text classifier based on Recurrent Neural Networks (RNN) using PyTorch. Designed and trained NLP models to extract and categorize textual information from specialized biomedical corpora with complete preprocessing and evaluation pipelines.",
+      "Clustering analysis of food bank distributions and demographic patterns to identify underserved areas and optimize resource allocation.",
+      "An AI-driven mental health support application leveraging natural language processing for empathetic conversation and mood tracking."
+    ]
   },
   "recipe": {
     "prepTime": "Prep Time",

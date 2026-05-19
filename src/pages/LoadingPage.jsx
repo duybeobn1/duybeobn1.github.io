@@ -23,7 +23,7 @@ const LoadingPage = () => {
   }, []);
 
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-white overflow-hidden">
+    <div className="fixed inset-0 flex items-center justify-center bg-minimal overflow-hidden">
       {/* Center content */}
       <div>
         {!finished ? (

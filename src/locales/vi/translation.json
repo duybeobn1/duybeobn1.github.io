@@ -4,6 +4,7 @@
     "about": "Giới thiệu",
     "projects": "Dự án",
     "experience": "Kinh nghiệm",
+    "research": "Nghiên cứu",
     "passions": "Niềm đam mê",
     "contact": "Liên hệ"
   },
@@ -15,7 +16,9 @@
     "getInTouch": "Liên hệ",
     "certifications": "Chứng chỉ",
     "featuredProjects": "Dự án Nổi bật",
+    "featuredResearch": "Nghiên cứu Nổi bật",
     "viewAllProjects": "Xem Tất cả Dự án",
+    "viewAllResearch": "Xem Tất cả Nghiên cứu",
     "personalStatement": "Tôi tin vào sức mạnh của công nghệ trong việc biến ý tưởng thành hiện thực,",
     "personalStatementHighlight": " tạo ra những giải pháp tạo nên sự khác biệt.",
     "ctaTitle": "Cùng Xây dựng Những Điều Tuyệt vời",
@@ -40,6 +43,20 @@
       "reinforcementLearning": {
         "title": "Học Tăng cường Đa Tác nhân",
         "description": "Tác nhân thông minh với DQN, Q-learning và MDP trong môi trường mô phỏng"
+      }
+    },
+    "research": {
+      "keigo": {
+        "title": "KEIGO-SYNC",
+        "description": "Nghiên cứu tác động của kính ngữ tiếng Nhật đến độ trung thực của LLMs — liệu lịch sự có khiến AI bớt trung thực?"
+      },
+      "ica": {
+        "title": "Inventory Culinary Assistance",
+        "description": "Nền tảng ẩm thực AI kết nối tồn kho tủ lạnh, nguyên lý TCM và khám phá công thức qua đồ thị tri thức Neo4j và LLMs"
+      },
+      "foodBank": {
+        "title": "Food Bank Clustering",
+        "description": "Phân tích cụm không gian và nhân khẩu học của các ngân hàng thực phẩm để xác định khu vực thiếu dịch vụ"
       }
     }
   },
@@ -94,7 +111,8 @@
       "reinforcementLearning": "Phát triển một loạt các dự án tiên tiến về các tác nhân thông minh và học tăng cường sử dụng Python và Jupyter Notebook. Triển khai các thuật toán tìm kiếm, Deep Q-Networks (DQN), và các chiến lược đánh giá chính sách trong môi trường mô phỏng (Pacman, tìm kiếm trực tiếp). Sử dụng Quá trình Quyết định Markov (MDP), value iteration và Q-learning để giải quyết các nhiệm vụ ra quyết định tuần tự phức tạp. Phân tích thực nghiệm và tối ưu hóa hiệu suất của các tác nhân cho các hệ thống đa tác nhân và các kịch bản học máy.",
       "keigoSync": "Một khung đánh giá có kiểm soát đo lường tác động của kính ngữ tiếng Nhật (Keigo) đến độ tin cậy thực tế và sự xu nịnh trong LLMs. Nghiên cứu sự đánh đổi giữa lịch sự và trung thực thông qua một bộ dữ liệu các bẫy xu nịnh được dịch sang các ngữ vựng thông thường, tiêu chuẩn và siêu kính trọng trong tiếng Nhật.",
       "dataVizEVGA": "Một dự án trực quan hóa dữ liệu tương tác khám phá sự tương tác giữa tiêu thụ năng lượng, điều kiện khí hậu và hiệu quả sử dụng nước (WUE) trong các trung tâm dữ liệu ở Châu Phi. Được xây dựng với D3.js v7, dự án bao gồm bản đồ choropleth về cường độ tiêu thụ năng lượng, biểu đồ phân tán về năng lượng tái tạo so với hiệu quả nước, và các biểu đồ khác nhằm nâng cao nhận thức về quản lý nước bền vững.",
-      "postureHumanoid": "Một dự án học sâu về tổng hợp hình ảnh dẫn hướng tư thế của con người. Từ video của người nguồn và người mục tiêu, mô hình tạo ra video mới của người mục tiêu thực hiện cùng chuyển động với người nguồn. Triển khai Smooth U-Net với cơ chế tự chú ý và huấn luyện WGAN-GP để loại bỏ hiện vật bàn cờ."
+      "postureHumanoid": "Một dự án học sâu về tổng hợp hình ảnh dẫn hướng tư thế của con người. Từ video của người nguồn và người mục tiêu, mô hình tạo ra video mới của người mục tiêu thực hiện cùng chuyển động với người nguồn. Triển khai Smooth U-Net với cơ chế tự chú ý và huấn luyện WGAN-GP để loại bỏ hiện vật bàn cờ.",
+      "danaVeganHouse": "Một trang web hiện đại, responsive cho Dāna Vegan House, nhà hàng chay tại Việt Nam kết hợp truyền thống Việt với ẩm thực thực vật sáng tạo. Được xây dựng bằng React, TypeScript và Vite, với giao diện sạch, trình bày thực đơn và điều hướng mượt mà."
     }
   },
   "experience": {
@@ -231,6 +249,24 @@
         "description": "Sống giữa di sản Việt Nam và văn hóa Pháp, làm việc với các đội quốc tế, biểu diễn các nghệ thuật truyền thống - tất cả những trải nghiệm này dạy tôi rằng những giải pháp tốt nhất đến từ việc hiểu và tôn trọng những quan điểm khác nhau. Trong code cũng như trong cuộc sống, sự đa dạng là sức mạnh."
       }
     }
+  },
+  "research": {
+    "title": "Tài liệu Nghiên cứu & Ấn phẩm",
+    "subtitle": "Bộ sưu tập các bài báo nghiên cứu, báo cáo và dự án học thuật của tôi về AI, NLP, thị giác máy tính, khai thác dữ liệu và AI ẩm thực.",
+    "viewPaper": "Xem bài báo",
+    "publications": [
+      "Tổng hợp video dẫn hướng tư thế sử dụng Smooth U-Net với cơ chế tự chú ý và huấn luyện WGAN-GP.",
+      "Khung đánh giá đo lường tác động của kính ngữ tiếng Nhật (Keigo) đến độ tin cậy và xu nịnh trong LLMs.",
+      "Trực quan hóa dữ liệu tương tác D3.js về mức tiêu thụ năng lượng, khí hậu và hiệu quả nước tại trung tâm dữ liệu Châu Phi.",
+      "Dự án ML trên đồ thị về dự đoán liên kết dùng Graph Autoencoders (GAE) và VGAE với nghiên cứu ablation.",
+      "Framework hoàn chỉnh cho Lập luận Dựa trên Giả định (ABA+) tích hợp DeBERTa-v2 tinh chỉnh và đồ thị PyVis.",
+      "Khám phá Vision Transformers khôi phục hình ảnh từ các mảnh bị xáo trộn bằng cơ chế chú ý.",
+      "Phân tích hơn 250.000 công thức từ Food.com với thuật toán phân loại và phân cụm để tiết lộ xu hướng văn hóa ẩm thực.",
+      "Nền tảng AI full-stack kết nối tồn kho tủ lạnh, nguyên lý TCM và khám phá công thức qua Neo4j và LLMs.",
+      "Phân loại văn bản y sinh dùng RNN với PyTorch, trích xuất thông tin từ kho ngữ liệu chuyên ngành.",
+      "Phân tích cụm không gian của ngân hàng thực phẩm để xác định khu vực thiếu dịch vụ và tối ưu phân bổ.",
+      "Ứng dụng hỗ trợ sức khỏe tinh thần AI sử dụng NLP cho hội thoại đồng cảm và theo dõi tâm trạng."
+    ]
   },
   "recipe": {
     "prepTime": "Thời Gian Chuẩn Bị",

@@ -13,6 +13,7 @@ import ProjectsPage from "./pages/ProjectsPage";
 import ExperiencePage from "./pages/ExperiencePage";
 import PassionsPage from "./pages/PassionsPage";
 import ContactPage from "./pages/ContactPage";
+import ResearchPage from "./pages/ResearchPage";
 import "./App.css";
 function App() {
   const [loadingFinished, setLoadingFinished] = useState(false);
@@ -109,6 +110,17 @@ function App() {
               transition={pageTransition}
             >
               <PassionsPage />
+            </motion.div>
+          } />
+          <Route path="/research" element={
+            <motion.div
+              variants={pageVariants}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+              transition={pageTransition}
+            >
+              <ResearchPage />
             </motion.div>
           } />
           <Route path="/contact" element={

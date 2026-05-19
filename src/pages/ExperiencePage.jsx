@@ -59,7 +59,7 @@ function ExperiencePage() {
                   <div className="w-8 h-8 bg-[var(--yellow)] rounded-full flex items-center justify-center mt-1 flex-shrink-0">
                     <div className="w-3 h-3 bg-white rounded-full"></div>
                   </div>
-                  <div className="flex-1 bg-white p-6 rounded-lg shadow-md text-left">
+                  <div className="flex-1 bg-minimal p-6 rounded-lg shadow-md text-left border border-line">
                     <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
                       <h3 className="text-xl font-semibold text-gray-900">
                         {exp.position}
@@ -122,7 +122,7 @@ function ExperiencePage() {
                   <div className="w-3 h-3 bg-white rounded-full"></div>
                 </div>
                 {/* Content */}
-                <div className="bg-white p-6 rounded-lg shadow-md flex-1">
+                <div className="bg-minimal p-6 rounded-lg shadow-md flex-1 border border-line">
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
                     <h3 className="text-xl font-semibold text-gray-900">
                       {edu.degree}
@@ -156,7 +156,7 @@ function ExperiencePage() {
                 <div className="w-8 h-8 bg-[var(--pink)] rounded-full flex items-center justify-center mt-1 flex-shrink-0">
                   <div className="w-3 h-3 bg-white rounded-full"></div>
                 </div>
-                <div className="bg-white p-6 rounded-lg shadow-md flex-1">
+                <div className="bg-minimal p-6 rounded-lg shadow-md flex-1 border border-line">
                   <h3 className="text-xl font-semibold text-gray-900">
                     Internship and formation in gastronomie
                   </h3>
@@ -170,7 +170,7 @@ function ExperiencePage() {
                 <div className="w-8 h-8 bg-[var(--yellow)] rounded-full flex items-center justify-center mt-1 flex-shrink-0">
                   <div className="w-3 h-3 bg-white rounded-full"></div>
                 </div>
-                <div className="bg-white p-6 rounded-lg shadow-md flex-1">
+                <div className="bg-minimal p-6 rounded-lg shadow-md flex-1 border border-line">
                   <h3 className="text-xl font-semibold text-gray-900">
                     Consultant culinaire
                   </h3>
@@ -188,7 +188,7 @@ function ExperiencePage() {
                 <div className="w-8 h-8 bg-[var(--green)] rounded-full flex items-center justify-center mt-1 flex-shrink-0">
                   <div className="w-3 h-3 bg-white rounded-full"></div>
                 </div>
-                <div className="bg-white p-6 rounded-lg shadow-md flex-1">
+                <div className="bg-minimal p-6 rounded-lg shadow-md flex-1 border border-line">
                   <h3 className="text-xl font-semibold text-gray-900">
                     Commis de cuisine at Bentomania
                   </h3>
@@ -205,7 +205,7 @@ function ExperiencePage() {
                 <div className="w-8 h-8 bg-[var(--blue)] rounded-full flex items-center justify-center mt-1 flex-shrink-0">
                   <div className="w-3 h-3 bg-white rounded-full"></div>
                 </div>
-                <div className="bg-white p-6 rounded-lg shadow-md flex-1">
+                <div className="bg-minimal p-6 rounded-lg shadow-md flex-1 border border-line">
                   <h3 className="text-xl font-semibold text-gray-900">
                     Commis de cuisine at Chez Banoi
                   </h3>
@@ -222,7 +222,7 @@ function ExperiencePage() {
                 <div className="w-8 h-8 bg-[var(--pink)] rounded-full flex items-center justify-center mt-1 flex-shrink-0">
                   <div className="w-3 h-3 bg-white rounded-full"></div>
                 </div>
-                <div className="bg-white p-6 rounded-lg shadow-md flex-1">
+                <div className="bg-minimal p-6 rounded-lg shadow-md flex-1 border border-line">
                   <h3 className="text-xl font-semibold text-gray-900">
                     Le Grand Refectoire
                   </h3>

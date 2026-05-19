@@ -8,7 +8,8 @@ const HomePage = () => {
   const sections = [
     { id: "intro", label: t("nav.home") || "Intro", color: "pink" },
     { id: "certs", label: t("home.certifications") || "Certifications", color: "yellow" },
-    { id: "featured", label: t("home.featuredProjects") || "Projects", color: "blue" },
+    { id: "projects", label: t("home.featuredProjects") || "Projects", color: "blue" },
+    { id: "research", label: t("nav.research") || "Research", color: "pink" },
     { id: "cta", label: t("home.ctaTitle") || "Contact", color: "green" },
   ];
   const [active, setActive] = useState("intro");
@@ -138,7 +139,7 @@ const HomePage = () => {
       </section>
 
       {/* Featured Projects */}
-      <section id="featured" className="py-24 px-6">
+      <section id="projects" className="py-24 px-6">
         <div className="max-w-6xl mx-auto">
           <motion.h3
             className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center mb-16"
@@ -151,25 +152,13 @@ const HomePage = () => {
 
           <div className="grid md:grid-cols-2 gap-8">
             {[
-              {
-                titleKey: "visionTransformer",
-                tech: ["PyTorch", "Vision Transformers", "Image Processing"],
-              },
-              {
-                titleKey: "cookingAssistant",
-                tech: ["React", "Spring Boot", "OCR", "PostgreSQL"],
-              },
-              {
-                titleKey: "foodMining",
-                tech: ["Python", "Data Mining", "Machine Learning"],
-              },
-              {
-                titleKey: "reinforcementLearning",
-                tech: ["Python", "Deep Q-Networks", "Multi-Agent Systems"],
-              },
+              { key: "visionTransformer", tech: ["PyTorch", "Vision Transformers", "Image Processing"] },
+              { key: "cookingAssistant", tech: ["FastAPI", "Neo4j", "Gemini AI"] },
+              { key: "foodMining", tech: ["Python", "Data Mining", "Machine Learning"] },
+              { key: "reinforcementLearning", tech: ["Python", "Deep Q-Networks", "Multi-Agent Systems"] },
             ].map((project, i) => (
               <motion.div
-                key={project.titleKey}
+                key={project.key}
                 className="p-6 border-t border-line"
                 initial={{ opacity: 0, x: -40 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -177,11 +166,11 @@ const HomePage = () => {
               >
                 <h4 className="text-xl font-semibold mb-2">
                   <span className={`hl-bar ${['hl-pink','hl-yellow','hl-blue','hl-green'][i % 4]}`}>
-                    {t(`home.projects.${project.titleKey}.title`)}
+                    {t(`home.projects.${project.key}.title`)}
                   </span>
                 </h4>
                 <p className="text-gray-600 leading-relaxed">
-                  {t(`home.projects.${project.titleKey}.description`)}
+                  {t(`home.projects.${project.key}.description`)}
                 </p>
                 <div className="row-tech">{project.tech.join(' · ')}</div>
               </motion.div>
@@ -196,6 +185,60 @@ const HomePage = () => {
           >
             <Link to="/projects" className="link-circle inline-flex items-center">
               {t("home.viewAllProjects")}
+              <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </Link>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Featured Research */}
+      <section id="research" className="py-24 px-6">
+        <div className="max-w-6xl mx-auto">
+          <motion.h3
+            className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center mb-16"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            {t("home.featuredResearch")}
+          </motion.h3>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              { key: "keigo", tech: ["Python", "LLM Evaluation", "NLP"] },
+              { key: "ica", tech: ["FastAPI", "Neo4j", "Gemini AI"] },
+              { key: "foodBank", tech: ["Python", "Data Mining", "Clustering"] },
+            ].map((item, i) => (
+              <motion.div
+                key={item.key}
+                className="p-6 border-t border-line"
+                initial={{ opacity: 0, x: -40 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: i * 0.15 }}
+              >
+                <h4 className="text-xl font-semibold mb-2">
+                  <span className={`hl-bar ${['hl-pink','hl-yellow','hl-blue'][i % 3]}`}>
+                    {t(`home.research.${item.key}.title`)}
+                  </span>
+                </h4>
+                <p className="text-gray-600 leading-relaxed">
+                  {t(`home.research.${item.key}.description`)}
+                </p>
+                <div className="row-tech">{item.tech.join(' · ')}</div>
+              </motion.div>
+            ))}
+          </div>
+
+          <motion.div
+            className="text-center mt-12"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+          >
+            <Link to="/research" className="link-circle inline-flex items-center">
+              {t("home.viewAllResearch")}
               <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>

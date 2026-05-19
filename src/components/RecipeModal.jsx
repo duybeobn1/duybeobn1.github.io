@@ -143,7 +143,7 @@ const RecipeModal = ({ isOpen, onClose, recipe }) => {
                 />
                 <button
                   onClick={onClose}
-                  className="absolute top-4 right-4 bg-white bg-opacity-80 hover:bg-opacity-100 rounded-full p-2 transition-all duration-200"
+                  className="absolute top-4 right-4 bg-minimal bg-opacity-80 hover:bg-opacity-100 rounded-full p-2 transition-all duration-200 click-press"
                 >
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />

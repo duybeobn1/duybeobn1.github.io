@@ -87,7 +87,7 @@ function ContactPage() {
               <a
                 key={index}
                 href={info.link}
-                className="group flex flex-col items-center p-8 bg-minimal rounded-xl border border-line transition-all duration-300 transform hover:scale-[1.01]"
+                className="group flex flex-col items-center p-8 bg-minimal rounded-xl border border-line transition-all duration-300 hover:scale-[1.01] active:scale-[0.97]"
               >
                 <div className="text-gray-800 mb-4">
                   {info.icon}
