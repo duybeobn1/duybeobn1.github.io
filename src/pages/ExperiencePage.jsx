@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion';
 
 function ExperiencePage() {
   const { t } = useTranslation();
@@ -9,7 +10,7 @@ function ExperiencePage() {
     {
       id: 1,
       institution: "Université Claude Bernard Lyon 1",
-      degree: "Master Informatique — Spécialisation IA et Data Science",
+      degree: "Master Informatique - Spécialisation IA et Data Science",
       duration: "2023 – 2026 (M2)",
       description:
         "Key courses: Supervised Learning, Image Analysis, Game Theory, Multi-Agent Systems, AI Techniques. Developed hands-on skills in machine learning, computer vision, distributed systems, and data-driven web apps.",
@@ -20,12 +21,12 @@ function ExperiencePage() {
       degree: "Engineering Preparation and Materials Science (BSc level)",
       duration: "2019 – 2022",
       description:
-        "Two-year preparatory cycle focused on Mathematics, Physics, and Computer Science fundamentals. Third-year specialized in Materials Science — studied engineering materials, properties, processes, and simulation tools. Awarded the Saint-Gobain merit scholarship for academic excellence and research contributions during the 3rd year.",
+        "Two-year preparatory cycle focused on Mathematics, Physics, and Computer Science fundamentals. Third-year specialized in Materials Science - studied engineering materials, properties, processes, and simulation tools. Awarded the Saint-Gobain merit scholarship for academic excellence and research contributions during the 3rd year.",
     },
     {
       id: 3,
       institution: "Lycée d’excellence en sciences naturelles (Hanoi, Vietnam)",
-      degree: "High School Diploma — Science Track",
+      degree: "High School Diploma - Science Track",
       duration: "2016 – 2019",
       description:
         "Graduated with a strong focus on advanced Mathematics, Physics, and Chemistry.",
@@ -33,7 +34,7 @@ function ExperiencePage() {
   ];
 
   return (
-    <div className="min-h-screen pt-20 px-4 sm:px-6 lg:px-8 bg-minimal text-default">
+    <div className="min-h-screen pt-16 px-4 sm:px-6 lg:px-8 bg-minimal text-default">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -51,6 +52,12 @@ function ExperiencePage() {
           </h2>
           <div className="space-y-8">
             {experiences.map((exp, index) => (
+              <motion.div
+                key={exp.id}
+                initial={{ opacity: 0, y: 24 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+              >
               <div key={exp.id} className="relative">
                 {index < experiences.length - 1 && (
                   <div className="absolute left-4 top-16 w-0.5 h-16 bg-[var(--line)]"></div>
@@ -59,7 +66,7 @@ function ExperiencePage() {
                   <div className="w-8 h-8 bg-[var(--yellow)] rounded-full flex items-center justify-center mt-1 flex-shrink-0">
                     <div className="w-3 h-3 bg-white rounded-full"></div>
                   </div>
-                  <div className="flex-1 bg-minimal p-6 rounded-lg shadow-md text-left border border-line">
+                  <div className="flex-1 bg-minimal p-6 rounded-lg text-left border border-line">
                     <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
                       <h3 className="text-xl font-semibold text-gray-900">
                         {exp.position}
@@ -102,6 +109,7 @@ function ExperiencePage() {
                   </div>
                 </div>
               </div>
+              </motion.div>
             ))}
           </div>
         </div>
@@ -115,8 +123,14 @@ function ExperiencePage() {
             {/* Timeline vertical line */}
             <div className="absolute left-4 top-16 bottom-0 w-0.5 bg-[var(--line)]"></div>
 
-            {education.map((edu) => (
-              <div key={edu.id} className="flex items-start space-x-4 relative">
+            {education.map((edu, index) => (
+              <motion.div
+                key={edu.id}
+                className="flex items-start space-x-4 relative"
+                initial={{ opacity: 0, y: 24 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+              >
                 {/* Timeline dot */}
                 <div className="w-8 h-8 bg-[var(--blue)] rounded-full flex items-center justify-center mt-1 flex-shrink-0">
                   <div className="w-3 h-3 bg-white rounded-full"></div>
@@ -138,13 +152,13 @@ function ExperiencePage() {
                     {edu.description}
                   </p>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
 
         {/* Autres expériences */}
-        <section className="py-24 px-6 bg-minimal">
+        <section className="section-premium">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl font-semibold text-gray-900 mb-8">
               {t('experience.otherExperiences')}
@@ -152,7 +166,13 @@ function ExperiencePage() {
             <div className="space-y-8 relative">
               {/* Timeline vertical line */}
               <div className="absolute left-4 top-16 bottom-0 w-0.5 bg-[var(--line)]"></div>
-              <div className="flex items-start space-x-4 relative">
+
+              <motion.div
+                className="flex items-start space-x-4 relative"
+                initial={{ opacity: 0, y: 24 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+              >
                 <div className="w-8 h-8 bg-[var(--pink)] rounded-full flex items-center justify-center mt-1 flex-shrink-0">
                   <div className="w-3 h-3 bg-white rounded-full"></div>
                 </div>
@@ -164,9 +184,14 @@ function ExperiencePage() {
                     Le Cordon Bleu, Hong Kong University, Institut Paul Bocuse.
                   </p>
                 </div>
-              </div>
+              </motion.div>
               {/* Consultant culinaire */}
-              <div className="flex items-start space-x-4 relative">
+              <motion.div
+                className="flex items-start space-x-4 relative"
+                initial={{ opacity: 0, y: 24 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+              >
                 <div className="w-8 h-8 bg-[var(--yellow)] rounded-full flex items-center justify-center mt-1 flex-shrink-0">
                   <div className="w-3 h-3 bg-white rounded-full"></div>
                 </div>
@@ -182,9 +207,14 @@ function ExperiencePage() {
                     Michelin) et Dana Vegan House in Vietnam.
                   </p>
                 </div>
-              </div>
+              </motion.div>
 
-              <div className="flex items-start space-x-4 relative">
+              <motion.div
+                className="flex items-start space-x-4 relative"
+                initial={{ opacity: 0, y: 24 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+              >
                 <div className="w-8 h-8 bg-[var(--green)] rounded-full flex items-center justify-center mt-1 flex-shrink-0">
                   <div className="w-3 h-3 bg-white rounded-full"></div>
                 </div>
@@ -199,9 +229,14 @@ function ExperiencePage() {
                     “Meal preparation and inventory management.”
                   </p>
                 </div>
-              </div>
+              </motion.div>
               {/* Commis de cuisine */}
-              <div className="flex items-start space-x-4 relative">
+              <motion.div
+                className="flex items-start space-x-4 relative"
+                initial={{ opacity: 0, y: 24 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+              >
                 <div className="w-8 h-8 bg-[var(--blue)] rounded-full flex items-center justify-center mt-1 flex-shrink-0">
                   <div className="w-3 h-3 bg-white rounded-full"></div>
                 </div>
@@ -216,9 +251,14 @@ function ExperiencePage() {
                     “Meal preparation and inventory management.”
                   </p>
                 </div>
-              </div>
+              </motion.div>
 
-              <div className="flex items-start space-x-4 relative">
+              <motion.div
+                className="flex items-start space-x-4 relative"
+                initial={{ opacity: 0, y: 24 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.4 }}
+              >
                 <div className="w-8 h-8 bg-[var(--pink)] rounded-full flex items-center justify-center mt-1 flex-shrink-0">
                   <div className="w-3 h-3 bg-white rounded-full"></div>
                 </div>
@@ -233,7 +273,7 @@ function ExperiencePage() {
                     “Chef de partie (entree and tapas)”
                   </p>
                 </div>
-              </div>
+              </motion.div>
             </div>
           </div>
         </section>

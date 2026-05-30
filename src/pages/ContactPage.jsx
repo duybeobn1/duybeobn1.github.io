@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion';
 
 function ContactPage() {
   const { t } = useTranslation();
@@ -59,10 +60,10 @@ function ContactPage() {
   ];
 
   return (
-    <div className="min-h-screen pt-20 px-4 sm:px-6 lg:px-8 bg-minimal text-default">
+    <div className="min-h-screen pt-16 px-4 sm:px-6 lg:px-8 bg-minimal text-default">
       <div className="max-w-4xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="section-premium text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6"><span className="hl-bar hl-pink">{t('contact.title')}</span></h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             {t('contact.subtitle')}
@@ -70,7 +71,7 @@ function ContactPage() {
         </div>
 
         {/* Main Content - Centered */}
-        <div className="text-center space-y-12">
+        <div className="section-premium text-center space-y-12">
           {/* Let's Connect Section */}
           <div>
             <h2 className="text-3xl font-semibold text-gray-900 mb-8">
@@ -84,6 +85,12 @@ function ContactPage() {
           {/* Contact Details */}
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             {contactInfo.map((info, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 24 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+              >
               <a
                 key={index}
                 href={info.link}
@@ -95,11 +102,16 @@ function ContactPage() {
                 <p className="text-sm text-gray-500 mb-2">{info.label}</p>
                 <p className="text-gray-900 font-semibold text-lg">{info.value}</p>
               </a>
+              </motion.div>
             ))}
           </div>
 
           {/* Social Links */}
-          <div>
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+          >
             <h3 className="text-2xl font-semibold text-gray-900 mb-8">
               {t('contact.followMe')}
             </h3>
@@ -117,7 +129,7 @@ function ContactPage() {
                 </a>
               ))}
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

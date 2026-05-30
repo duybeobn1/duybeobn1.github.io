@@ -66,14 +66,14 @@ const PassionsPage = () => {
       type: "youtube",
       youtubeId: "vyjFoTYKk50",
       start: 149,
-      title: "Lion Dance World Championship 2023 — Malaysia"
+      title: "Lion Dance World Championship 2023 - Malaysia"
     },
     {
       id: 2,
       type: "youtube",
       youtubeId: "fxaqCjmoxvM",
       start: 264,
-      title: "Cultural Competition — Hong Kong 2024"
+      title: "Cultural Competition - Hong Kong 2024"
     }
   ];
 
@@ -111,9 +111,9 @@ const PassionsPage = () => {
           <span className="hl-bar hl-pink">Culinary Philosophy</span>
         </h3>
         <div className="space-y-4 text-gray-700">
-          <blockquote className="italic leading-relaxed">“If you want to be a great chef, you have to work with great chefs.” — Marco Pierre White</blockquote>
-          <blockquote className="italic leading-relaxed">“Mother Nature is the true artist; her simple produce, handled with respect, is perfection.” — Marco Pierre White</blockquote>
-          <blockquote className="italic leading-relaxed">“Success is born out of arrogance, but arrogance is born out of success.” — Marco Pierre White</blockquote>
+          <blockquote className="italic leading-relaxed">“If you want to be a great chef, you have to work with great chefs.” - Marco Pierre White</blockquote>
+          <blockquote className="italic leading-relaxed">“Mother Nature is the true artist; her simple produce, handled with respect, is perfection.” - Marco Pierre White</blockquote>
+          <blockquote className="italic leading-relaxed">“Success is born out of arrogance, but arrogance is born out of success.” - Marco Pierre White</blockquote>
         </div>
       </motion.div>
 
@@ -146,7 +146,7 @@ const PassionsPage = () => {
               {t("passions.cooking.experience.education")}
             </h4>
             <p className="text-gray-600">
-              Le Cordon Bleu · Hong Kong University — Science of Gastronomy · Institut Paul Bocuse
+              Le Cordon Bleu · Hong Kong University - Science of Gastronomy · Institut Paul Bocuse
             </p>
           </div>
         </div>
@@ -304,7 +304,7 @@ const PassionsPage = () => {
           {t("passions.music.intro.title")}
         </h3>
         <p className="text-gray-700 leading-relaxed mb-4">
-          I'm a pianist / guitarist focusing on jazz and blues improvisation. I stopped playing actively, but my works are still there — always.
+          I'm a pianist / guitarist focusing on jazz and blues improvisation. I stopped playing actively, but my works are still there - always.
         </p>
         <p className="text-gray-600">
           Listen on SoundCloud:
@@ -367,7 +367,7 @@ const PassionsPage = () => {
 
   return (
     <main className="relative bg-minimal text-default min-h-screen overflow-x-hidden">
-      <section className="pt-24 pb-12 px-4 sm:px-6 lg:px-8">
+      <section className="pt-16 pb-8 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <motion.div

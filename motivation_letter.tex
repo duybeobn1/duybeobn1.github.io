@@ -1,0 +1,40 @@
+\documentclass[11pt,a4paper]{letter}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+\usepackage{hyperref}
+\usepackage{parskip}
+
+\address{80 rue Louis Michel \\ 78500 Sartrouville, France \\ +33 7 66 74 50 64 \\ \href{mailto:avu270201@gmail.com}{avu270201@gmail.com}}
+
+\signature{Vu Anh Duy}
+
+\begin{document}
+
+\begin{letter}{Dr. Caterina Urban \& le Comité de Sélection \\ Équipe ANTIQUE, Centre Inria Paris \& ENS | PSL \\ Paris, France}
+
+\date{\today}
+
+\opening{Chère Dr. Urban, chers membres du Comité,}
+
+\textbf{Objet : Candidature au contrat doctoral – \textit{Towards Explainable Foundation Models via Learned Neural Specifications} (Offre 2026-09969)}
+
+Je soumets ma candidature au contrat doctoral portant sur l'apprentissage de spécifications neuronales pour les modèles de fondation, au sein de l'équipe ANTIQUE. Actuellement en Master 2 Intelligence Artificielle à l'Université Claude Bernard Lyon 1, mon parcours de recherche — architectures Transformer, évaluation comportementale des LLM, cadres formels d'argumentation et études d'ablation systématiques — s'aligne directement avec les trois axes de la thèse proposée.
+
+\textbf{Abstractions par têtes d'attention comme unités de spécification.} Mon travail quotidien à la SNCF consiste à implémenter et optimiser \textbf{Point Transformer V3 (PTv3)} avec \textbf{FlashAttention} pour la segmentation de nuages de points LiDAR sur des massifs ferroviaires. Cette manipulation directe des mécanismes d'attention — analyse de la contribution de chaque tête, optimisation des schémas d'attention sparse — me donne une perspective opérationnelle sur les objets mêmes que la thèse propose comme unités d'abstraction. Mon précédent projet \textbf{Mini Vision Transformer} a consolidé cette compréhension en expérimentant la permutation de patches et l'occlusion dans les ViTs.
+
+\textbf{Spécifications Horn-Clause comme explications formelles.} Mon travail sur le \textbf{cadre d'argumentation ABA+} est en lien direct avec cet axe. J'ai implémenté un système formel complet — parseur, algorithmes de normalisation (élimination de cycles, aplatissement, atomisation), génération d'arguments par chaînage avant — régi par une sémantique formelle stricte distinguant les attaques normales et inversées par préférence. Cette expérience des systèmes logiques à base de règles, couplée à un modèle DeBERTa-v2 fine-tuné pour la détection d'attaques, m'a préparé à penser l'interface entre représentations apprises et spécifications logiques.
+
+Cette thèse me passionne car elle affronte les limites que j'ai rencontrées dans mes propres travaux : les têtes d'attention ne sont pas toujours des unités fonctionnelles stables, les clauses de Horn peuvent être trop rigides pour des comportements probabilistes, et les règles apprises risquent d'être triviales. Le fait que le sujet reconnaisse explicitement ces risques et intègre des stratégies de repli (représentations par sous-espaces, règles pondérées, contraintes de falsifiabilité) témoigne d'une rigueur scientifique dans laquelle je souhaite m'épanouir.
+
+L'équipe ANTIQUE, au sein du cluster \textbf{PR[AI]RIE-PSAI} et avec la collaboration prévue avec \textbf{Xujie Si} à l'Université de Toronto, offre un cadre idéal pour mener cette recherche à l'intersection des méthodes formelles et du deep learning. Fort de mon expertise pratique des Transformers, de mon expérience des systèmes formels et de ma rigueur méthodologique, je suis convaincu de pouvoir contribuer dès le premier jour.
+
+\closing{Je vous remercie de l'attention portée à ma candidature et me tiens à votre disposition pour un entretien.\\[1em]
+Cordialement,}
+
+\end{letter}
+
+\end{document}

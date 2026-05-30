@@ -48,7 +48,7 @@
     "research": {
       "keigo": {
         "title": "KEIGO-SYNC",
-        "description": "Investigating grammatical politeness and sycophancy in multilingual LLMs — does polite Japanese make AI less truthful?"
+        "description": "Investigating grammatical politeness and sycophancy in multilingual LLMs - does polite Japanese make AI less truthful?"
       },
       "ica": {
         "title": "Inventory Culinary Assistance",
@@ -102,7 +102,7 @@
       "airmiumSystem": "Analyzed data workflows and user requirements, Designed and implemented a secure, scalable system for data historization and quality control, Developed web interfaces for accessing and visualizing real-time air treatment data, Proposed solutions for backup strategies and mobile/web accessibility.",
       "edgeDetectionProject": "This project implements advanced edge detection techniques using differential operators (Prewitt, Sobel, Kirsch) combined with thresholding and refinement processes to highlight contours in images.",
       "visionTransformer": "This project explores the capabilities of Vision Transformers (ViTs) by segmenting images into fixed-size patches and attempting to reconstruct the original image using attention-based mechanisms. By experimenting with small patch permutations (e.g., 4×4), the model evaluates whether global context can be preserved and restored from shuffled or occluded image segments. The goal is to investigate the effectiveness of transformer attention in recovering image structure, paving the way for applications in image inpainting, resizing, or restoration.",
-      "cookingAssistant": "Home cooks and chefs lack an intelligent system connecting inventory management with recipe discovery, Traditional Chinese Medicine (TCM) dietary principles, and AI-powered automation. This full-stack AI platform lets users scan their fridge with computer vision, generate TCM-balanced multi-course menus via fine-tuned LLMs, track expiry with event-driven notifications, and receive molecular or philosophical ingredient substitutions through a Neo4j knowledge graph — all powered by FastAPI, Gemini, Ollama, Supabase, and Kafka.",
+      "cookingAssistant": "Home cooks and chefs lack an intelligent system connecting inventory management with recipe discovery, Traditional Chinese Medicine (TCM) dietary principles, and AI-powered automation. This full-stack AI platform lets users scan their fridge with computer vision, generate TCM-balanced multi-course menus via fine-tuned LLMs, track expiry with event-driven notifications, and receive molecular or philosophical ingredient substitutions through a Neo4j knowledge graph - all powered by FastAPI, Gemini, Ollama, Supabase, and Kafka.",
       "foodMining": "A comprehensive food data analysis platform designed to identify and characterize culinary cultures from over 250,000 recipes from Food.com. Developed data mining modules for extraction, structuring, and large-scale visualization of food data. Implemented classification and clustering algorithms to reveal cultural trends, nutritional habits, and correlations between ingredients, dishes, and regions. Future development includes integration of nutritional aspects related to traditional Asian medicine.",
       "biomedicalRNN": "A biomedical text classifier based on Recurrent Neural Networks (RNN) using PyTorch. Designed and trained natural language processing models to extract and categorize textual information from specialized biomedical corpora. Implemented complete pipelines for preprocessing, vectorization, and evaluation on real-world datasets. Achieved high accuracy on scientific abstract classification and automatic identification of medical themes, demonstrating model robustness in real-world contexts.",
       "fashionNumbers": "Development of an image classification model using neural networks for automatic identification of fashion items and digits from standard datasets (Fashion MNIST, MNIST). Designed preprocessing and data augmentation pipelines to improve model robustness. Evaluated on real test sets with excellent accuracy rates, demonstrating the model's effectiveness for visual recognition in varied contexts.",
@@ -148,7 +148,7 @@
         "employmentType": "Internship",
         "position": "Software Development Intern",
         "duration": "Apr 2024 – Jul 2024",
-        "description": "Developed a secure data management system for air measurement and treatment tools. Designed a PostgreSQL database, built a Spring Boot backend, and created a responsive web interface for data access, automation, and historization — replacing manual Excel processes.",
+        "description": "Developed a secure data management system for air measurement and treatment tools. Designed a PostgreSQL database, built a Spring Boot backend, and created a responsive web interface for data access, automation, and historization - replacing manual Excel processes.",
         "technologies": ["Java", "Spring Boot", "PostgreSQL", "Tailwind CSS", "CI/CD"]
       },
       {
@@ -219,7 +219,7 @@
         "title": "Traditional Lion Dance",
         "description": "Lion dance is more than performance - it's cultural preservation, athletic art, and spiritual practice combined. Through years of training and performance, I've learned the discipline, teamwork, and cultural respect that this ancient art demands.",
         "definition": "Lion dance is a traditional performance across Chinese and many Southeast Asian communities. Two dancers animate a lion costume with expressive head and tail work, footwork, and acrobatic jumps to the rhythm of drums, cymbals, and gong. The dance symbolizes good fortune and is performed at festivals, ceremonies, and grand openings.",
-        "personal": "Lion dance trains my discipline and work ethic. Repetition, conditioning, and the courage to get back up after a fall make me more resilient and focused — on stage and in life."
+        "personal": "Lion dance trains my discipline and work ethic. Repetition, conditioning, and the courage to get back up after a fall make me more resilient and focused - on stage and in life."
       },
       "skills": "Performance Skills",
       "performances": "Performance Types",

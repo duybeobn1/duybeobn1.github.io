@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion';
 
 const pdfBase = '/Research Document';
 
@@ -13,7 +14,7 @@ const publications = [
   },
   {
     id: 2,
-    title: "KEIGO-SYNC: The Honorifics Trap — Investigating Grammatical Politeness and Sycophancy in Multilingual LLMs",
+    title: "KEIGO-SYNC: The Honorifics Trap - Investigating Grammatical Politeness and Sycophancy in Multilingual LLMs",
     authors: "Edgar Demeude, Vu Anh Duy, et al.",
     venue: "AI Safety Research Project, Université Lyon 1",
     year: 2025,
@@ -65,7 +66,7 @@ const publications = [
   },
   {
     id: 8,
-    title: "Inventory Culinary Assistance — AI-Powered Culinary Platform",
+    title: "Inventory Culinary Assistance - AI-Powered Culinary Platform",
     authors: "Vu Anh Duy",
     venue: "Personal Research Project",
     year: 2026,
@@ -107,9 +108,9 @@ function ResearchPage() {
   const descriptions = t('research.publications', { returnObjects: true });
 
   return (
-    <div className="min-h-screen pt-20 px-4 sm:px-6 lg:px-8 bg-minimal text-default">
+    <div className="min-h-screen pt-16 px-4 sm:px-6 lg:px-8 bg-minimal text-default">
       <div className="max-w-6xl mx-auto">
-        <div className="mb-12 text-center">
+        <div className="section-premium text-center">
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
             <span className="hl-bar hl-pink">{t('research.title')}</span>
           </h1>
@@ -118,17 +119,23 @@ function ResearchPage() {
           </p>
         </div>
 
-        <div className="row-list">
+        <div className="section-premium row-list">
           {publications.filter(pub => pub.pdf).sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0)).map((pub, idx) => {
               const isFeatured = pub.featured;
               const accents = ['hl-pink','hl-yellow','hl-blue','hl-green'];
               const accent = isFeatured ? 'hl-yellow' : accents[idx % accents.length];
               return (
-                <div key={pub.id} className={`row-item ${isFeatured ? 'bg-[rgba(255,242,204,0.38)] ring-1 ring-[var(--line)] rounded-xl px-3' : ''}`}>
+                <motion.div
+                  key={pub.id}
+                  className={`row-item ${isFeatured ? 'bg-[rgba(255,242,204,0.38)] ring-1 ring-[var(--line)] rounded-xl px-3' : ''}`}
+                  initial={{ opacity: 0, y: 24 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: idx * 0.05 }}
+                >
                 <div className="row-title text-xl">
                   <span className={`hl-bar ${accent}`}>{pub.title}</span>
                   <div className="row-tech">
-                    {pub.authors} &middot; {pub.venue} &middot; {pub.year}
+                    {pub.authors} &middot; {pub.venue} ({pub.year})
                   </div>
                 </div>
                 <div className="row-desc leading-relaxed">
@@ -166,7 +173,7 @@ function ResearchPage() {
                     </a>
                   )}
                 </div>
-              </div>
+              </motion.div>
             );
           })}
         </div>

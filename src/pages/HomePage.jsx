@@ -13,7 +13,6 @@ const HomePage = () => {
     { id: "cta", label: t("home.ctaTitle") || "Contact", color: "green" },
   ];
   const [active, setActive] = useState("intro");
-  // Choose CV file based on active language: fr => French, otherwise English
   const cvHref = i18n.language === 'fr' ? '/cv/CV_Francais_v2.pdf' : '/cv/CV_Eng_v2.pdf';
 
   useEffect(() => {
@@ -36,7 +35,7 @@ const HomePage = () => {
   return (
     <main className="relative bg-minimal text-default min-h-screen overflow-x-hidden">
       {/* Hero section */}
-      <section id="intro" className="h-screen flex flex-col justify-center items-center px-4 text-center pt-16">
+      <section id="intro" className="min-h-[100dvh] flex flex-col justify-center items-center px-6 text-center pt-12">
         <motion.div
           className="mb-6"
           initial={{ opacity: 0, scale: 0.9 }}
@@ -92,7 +91,7 @@ const HomePage = () => {
           </a>
         </motion.div>
       </section>
-      <section id="certs" className="py-24 px-6">
+      <section id="certs" className="section-premium">
         <div className="max-w-4xl mx-auto text-center">
           <motion.h3
             className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center mb-12"
@@ -125,11 +124,11 @@ const HomePage = () => {
               <strong>IBM Machine Learning with Python</strong>
             </p>
             <p>
-              <strong>The Science of Gastronomy</strong> — The Hong Kong
+              <strong>The Science of Gastronomy</strong> - The Hong Kong
               University of Science and Technology (Grade: 92%)
             </p>
             <p>
-              <strong>Google Data Analytics</strong> — In Progress
+              <strong>Google Data Analytics</strong> - In Progress
             </p>
             <p>
               <strong>IBM AI Engineering Professional Certificate</strong>
@@ -139,7 +138,7 @@ const HomePage = () => {
       </section>
 
       {/* Featured Projects */}
-      <section id="projects" className="py-24 px-6">
+      <section id="projects" className="section-premium">
         <div className="max-w-6xl mx-auto">
           <motion.h3
             className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center mb-16"
@@ -194,7 +193,7 @@ const HomePage = () => {
       </section>
 
       {/* Featured Research */}
-      <section id="research" className="py-24 px-6">
+      <section id="research" className="section-premium">
         <div className="max-w-6xl mx-auto">
           <motion.h3
             className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center mb-16"
@@ -249,7 +248,7 @@ const HomePage = () => {
 
 
       {/* Contact CTA */}
-      <section id="cta" className="py-24 px-6">
+      <section id="cta" className="section-premium">
         <div className="max-w-4xl mx-auto text-center">
           <motion.h3
             className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6"

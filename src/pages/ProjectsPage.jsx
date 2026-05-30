@@ -1,5 +1,5 @@
-import { desc } from "framer-motion/client";
 import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion';
 
 function ProjectsPage() {
   const { t } = useTranslation();
@@ -206,7 +206,7 @@ let projects = [
         "Smart Cooking Assistant – Recipe & Ingredient Tracker (In Progress)",
       key: "cookingAssistant",
       description:
-        "Home cooks and chefs lack an intelligent system connecting inventory management with recipe discovery, Traditional Chinese Medicine (TCM) dietary principles, and AI-powered automation. This full-stack AI platform lets users scan their fridge, generate TCM-balanced menus, track expiry, and receive intelligent ingredient substitutions — all powered by a Neo4j knowledge graph, fine-tuned LLMs (Llama-3-8B), and cloud AI (Gemini, Supabase).",
+        "Home cooks and chefs lack an intelligent system connecting inventory management with recipe discovery, Traditional Chinese Medicine (TCM) dietary principles, and AI-powered automation. This full-stack AI platform lets users scan their fridge, generate TCM-balanced menus, track expiry, and receive intelligent ingredient substitutions - all powered by a Neo4j knowledge graph, fine-tuned LLMs (Llama-3-8B), and cloud AI (Gemini, Supabase).",
       technologies: [
         "Python",
         "FastAPI",
@@ -415,10 +415,10 @@ let projects = [
     });
 
   return (
-    <div className="min-h-screen pt-20 px-4 sm:px-6 lg:px-8 bg-minimal text-default">
+    <div className="min-h-screen pt-16 px-4 sm:px-6 lg:px-8 bg-minimal text-default">
       <div className="max-w-6xl mx-auto">
         {/* Title with highlight block */}
-        <div className="mb-12 text-center">
+        <div className="section-premium text-center">
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
             <span className="hl-bar hl-yellow">{t('projects.title')}</span>
           </h1>
@@ -428,15 +428,18 @@ let projects = [
         </div>
 
         {/* Lined list */}
-        <div className="row-list">
-          {displayedProjects.map((project, idx) => {
+        <div className="section-premium row-list">
+            {displayedProjects.map((project, idx) => {
               const isFeaturedProject = project.key === 'cookingAssistant';
               const accents = ['hl-pink','hl-yellow','hl-blue','hl-green'];
               const accent = isFeaturedProject ? 'hl-yellow' : accents[idx % accents.length];
               return (
-                <div
+                <motion.div
                   key={project.id}
                   className={`row-item ${isFeaturedProject ? 'bg-[rgba(255,242,204,0.38)] ring-1 ring-[var(--line)] rounded-xl px-3' : ''}`}
+                  initial={{ opacity: 0, y: 24 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: idx * 0.05 }}
                 >
                   {/* Title */}
                   <div className="row-title text-xl">
@@ -461,7 +464,7 @@ let projects = [
                       : <a href={project.live} className="link-circle" target="_blank" rel="noopener noreferrer">{t('projects.liveDemo')}</a>
                     }
                   </div>
-                </div>
+                </motion.div>
               );
             })}
         </div>

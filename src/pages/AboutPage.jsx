@@ -5,9 +5,9 @@ import { motion } from 'framer-motion';
 function AboutPage() {
   const { t } = useTranslation();
   return (
-    <div className="min-h-screen pt-20 px-4 sm:px-6 lg:px-8 bg-minimal text-default">
+    <div className="min-h-screen pt-16 px-4 sm:px-6 lg:px-8 bg-minimal text-default">
       <div className="max-w-4xl mx-auto">
-        <div className="text-center mb-12">
+        <div className="section-premium text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             <span className="hl-bar hl-yellow">{t('about.title')}</span>
           </h1>
@@ -16,8 +16,13 @@ function AboutPage() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-start">
-          <div className="space-y-6">
+        <div className="section-premium grid md:grid-cols-2 gap-12 items-start">
+          <motion.div
+            className="space-y-6"
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
             <h2 className="text-2xl font-semibold text-gray-900">
               {t('about.greeting')}
             </h2>
@@ -28,10 +33,15 @@ function AboutPage() {
               {t('about.description2')}
             </p>
             
-          </div>
+          </motion.div>
 
           {/* Right column: Skills first, then Unique panel (both flow) */}
-          <div className="space-y-6">
+          <motion.div
+            className="space-y-6"
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.15 }}
+          >
             <motion.div whileHover={{ x: 4 }} className="accent-row accent-blue">
               <h3 className="text-xl font-semibold mb-4"><span className="hl-bar hl-blue">{t('about.skills')}</span></h3>
               <div className="space-y-3">
@@ -67,10 +77,16 @@ function AboutPage() {
               </div>
             </motion.div>
 
+          </motion.div>
         </div>
 
         {/* Full-width Beyond Code as a grid span */}
-        <div className="md:col-span-2 mt-12">
+        <motion.div
+          className="md:col-span-2 mt-12"
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+        >
           <motion.div whileHover={{ x: 4 }} className="accent-row accent-yellow text-center">
             <div className="px-4 sm:px-8 lg:px-12">
               <h3 className="text-lg font-semibold text-gray-900 mb-3">
@@ -90,10 +106,7 @@ function AboutPage() {
               </Link>
             </div>
           </motion.div>
-        </div>
-
-
-        </div>
+        </motion.div>
       </div>
     </div>
   );
