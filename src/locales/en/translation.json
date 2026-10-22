@@ -143,7 +143,7 @@
         "position": "AI & 3D Computer Vision Researcher – LiDAR Point Cloud Segmentation for BIM Generation",
         "duration": "Aug 2025 – Sep 2026",
         "location": "Saint-Denis, France · On-site",
-        "description": "AI research internship focused on 3D data and deep learning for semantic and instance segmentation of railway LiDAR point clouds.",
+        "description": "AI Research Engineer focused on 3D data and deep learning for semantic and instance segmentation of railway LiDAR point clouds.",
         "responsibilities": [
           "Engineered and trained advanced deep-learning architectures, including point-based and voxel-based neural networks, for 3D semantic and instance segmentation of massive, unstructured LiDAR point clouds.",
           "Architected robust, automated preprocessing pipelines for sparse, high-dimensional datasets using spatial down-sampling, geometric data augmentation, and feature normalization.",

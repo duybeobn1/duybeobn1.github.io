@@ -143,7 +143,7 @@
         "position": "Nghiên cứu AI & Thị giác máy tính 3D – Phân đoạn đám mây điểm LiDAR cho tạo mô hình BIM",
         "duration": "Thg 8/2025 – Thg 9/2026",
         "location": "Saint-Denis, Pháp · Làm việc tại văn phòng",
-        "description": "Thực tập nghiên cứu AI về dữ liệu 3D và deep learning cho phân đoạn ngữ nghĩa và instance đám mây điểm LiDAR đường sắt.",
+        "description": "Kỹ sư nghiên cứu AI, tập trung vào dữ liệu 3D và deep learning cho phân đoạn ngữ nghĩa và instance của đám mây điểm LiDAR đường sắt.",
         "responsibilities": [
           "Phát triển và huấn luyện kiến trúc deep learning tiên tiến, gồm mạng dựa trên điểm và voxel, để phân đoạn ngữ nghĩa và instance các đám mây điểm LiDAR lớn, phi cấu trúc.",
           "Thiết kế pipeline tiền xử lý tự động, vững chắc cho dữ liệu thưa và nhiều chiều, sử dụng giảm mẫu không gian, tăng cường dữ liệu hình học và chuẩn hóa đặc trưng.",

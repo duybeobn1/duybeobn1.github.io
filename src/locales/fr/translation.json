@@ -143,7 +143,7 @@
         "position": "Recherche en IA et vision par ordinateur 3D – Segmentation de nuages de points LiDAR pour la génération BIM",
         "duration": "Août 2025 – Sept. 2026",
         "location": "Saint-Denis, France · Sur site",
-        "description": "Stage de recherche en IA consacré aux données 3D et au deep learning pour la segmentation sémantique et par instance de nuages de points LiDAR ferroviaires.",
+        "description": "Ingénieur de recherche en IA spécialisé dans les données 3D et le deep learning pour la segmentation sémantique et par instance de nuages de points LiDAR ferroviaires.",
         "responsibilities": [
           "Développement et entraînement d’architectures avancées de deep learning, notamment des réseaux à base de points et de voxels, pour la segmentation sémantique et par instance de nuages LiDAR massifs et non structurés.",
           "Conception de pipelines automatisés et robustes de prétraitement pour des données clairsemées et de grande dimension : sous-échantillonnage spatial, augmentation géométrique et normalisation des caractéristiques.",
