@@ -13,7 +13,6 @@ const HomePage = () => {
     { id: "cta", label: t("home.ctaTitle") || "Contact", color: "green" },
   ];
   const [active, setActive] = useState("intro");
-  const cvHref = i18n.language === 'fr' ? '/cv/CV_Francais_v2.pdf' : '/cv/CV_Eng_v2.pdf';
 
   useEffect(() => {
     const els = sections.map(s => document.getElementById(s.id)).filter(Boolean);
@@ -86,9 +85,6 @@ const HomePage = () => {
           <Link to="/contact" className="link-circle">
             {t("home.getInTouch")}
           </Link>
-          <a href={cvHref} download className="link-circle">
-            {t("home.downloadCV")}
-          </a>
         </motion.div>
       </section>
       <section id="certs" className="section-premium">
