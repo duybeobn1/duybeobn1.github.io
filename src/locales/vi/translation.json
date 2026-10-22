@@ -10,7 +10,7 @@
   },
   "home": {
     "title": "Anh Vu",
-    "subtitle": "Học viên cao học M2 ngành AI, đang tìm cơ hội PhD về dữ liệu 3D, AI, thị giác máy tính và AI cho dinh dưỡng/ẩm thực, đồng thời tìm cơ hội CDI trong các lĩnh vực này.",
+    "subtitle": "Tốt nghiệp chương trình M2 Khoa học Máy tính, xếp hạng 5 vào tháng 9 năm 2026. Đang tìm cơ hội nghiên cứu sinh và vị trí kỹ sư toàn thời gian trong các lĩnh vực dữ liệu 3D, AI, thị giác máy tính và AI cho dinh dưỡng/ẩm thực.",
     "description": "Đam mê biến ý tưởng nghiên cứu thành hệ thống ứng dụng thực tế thông qua machine learning, thị giác máy tính và phát triển full-stack.",
     "viewWork": "Xem Công việc của Tôi",
     "getInTouch": "Liên hệ",
@@ -64,8 +64,8 @@
     "title": "Giới thiệu",
     "subtitle": "Tìm hiểu thêm về bối cảnh, kỹ năng và điều gì thúc đẩy tôi làm lập trình viên.",
     "greeting": "Xin chào, tôi là Anh Vu",
-    "description1": "Tôi là học viên M2 ngành Khoa học Máy tính tại Đại học Lyon 1, chuyên sâu về AI và Khoa học Dữ liệu. Tôi tập trung vào dữ liệu 3D, thị giác máy tính và AI ứng dụng, đặc biệt ở giao điểm giữa dinh dưỡng và ẩm thực.",
-    "description2": "Hiện tại tôi đang tìm cơ hội PhD về dữ liệu 3D, AI, thị giác máy tính và AI cho dinh dưỡng/ẩm thực, đồng thời cũng mở cho các vị trí CDI trong các lĩnh vực này. Tôi đam mê xây dựng các giải pháp AI hữu ích, lấy con người làm trung tâm, từ nghiên cứu đến triển khai.",
+    "description1": "Tôi tốt nghiệp chương trình M2 Khoa học Máy tính tại Đại học Lyon 1 vào tháng 9 năm 2026, xếp hạng 5 trong khóa. Tôi chuyên sâu về AI và Khoa học Dữ liệu, tập trung vào dữ liệu 3D, thị giác máy tính và AI ứng dụng, đặc biệt ở giao điểm giữa dinh dưỡng và ẩm thực.",
+    "description2": "Tôi đang tìm cơ hội nghiên cứu sinh về dữ liệu 3D, AI, thị giác máy tính và AI cho dinh dưỡng/ẩm thực, đồng thời sẵn sàng đảm nhận các vị trí kỹ sư toàn thời gian trong những lĩnh vực này. Tôi đam mê xây dựng các giải pháp AI hữu ích, lấy con người làm trung tâm, từ nghiên cứu đến triển khai.",
     "skills": "Kỹ năng",
     "frontend": "Frontend",
     "backend": "Backend",
@@ -124,26 +124,52 @@
     "items": [
       {
         "id": 1,
-        "company": "SNCF Réseau",
-        "employmentType": "Thực tập",
-        "position": "Thực tập sinh AI & Thị giác máy tính 3D – Phân đoạn đám mây điểm LiDAR cho tạo mô hình BIM",
-        "duration": "Thg 3/2026 – Hiện tại · 3 tháng",
-        "location": "St.-Denis, Île-de-France, Pháp · Làm việc tại văn phòng",
-        "description": "Thực tập sinh nghiên cứu AI, làm việc về phân đoạn đám mây điểm 3D để tự động tạo mô hình BIM trong môi trường đường sắt mật độ cao.",
+        "company": "Làm việc tự do",
+        "employmentType": "Từ xa",
+        "position": "Kỹ sư AI – Trợ lý soạn thảo tài liệu pháp lý (pipeline LLM cục bộ)",
+        "duration": "Tháng 8/2026 – Hiện tại",
+        "description": "Xây dựng hệ thống AI ngoại tuyến để soạn thảo tài liệu pháp lý từ hồ sơ vụ việc mật, bảo đảm dữ liệu không rời khỏi máy.",
         "responsibilities": [
-          "Thực hiện tổng quan tài liệu về các phương pháp phân đoạn ngữ nghĩa và phân đoạn instance 3D cho đám mây điểm LiDAR.",
-          "Thiết kế và xây dựng bộ dữ liệu gán nhãn cho các cảnh đường sắt mật độ cao (nhà ga, khu vực nhiều đường ray).",
-          "Xây dựng schema gán nhãn và phát triển quy trình annotation có kiểm soát chất lượng.",
-          "Phát triển và huấn luyện các mô hình deep learning cho bài toán phân đoạn 3D.",
-          "Triển khai các pipeline tiền xử lý gồm chuẩn hóa, lấy mẫu và tăng cường dữ liệu 3D.",
-          "Đánh giá hiệu năng mô hình bằng các chỉ số như mIoU, precision, recall và thời gian suy luận.",
-          "Làm việc với các công cụ như Python, PyTorch, PDAL và các thư viện thị giác máy tính.",
-          "Góp phần tự động hóa quá trình tạo mô hình BIM từ dữ liệu quét LiDAR cho hạ tầng đường sắt."
+          "Thiết kế và xây dựng hệ thống soạn thảo hoàn toàn ngoại tuyến, chạy mô hình Qwen3-30B cục bộ qua Ollama trên GPU 16 GB cùng giao diện web FastAPI.",
+          "Phát triển pipeline tạo nội dung có trích dẫn, liên kết từng câu được tạo với đoạn nguồn; tự động kiểm tra ID và tính nhất quán của số liệu, đồng thời gắn cờ để con người rà soát khi xác minh thất bại.",
+          "Xây dựng công cụ xử lý tài liệu và phát hiện xung đột: chuyển đầu vào Word thành dữ liệu có cấu trúc với ID phần tử ổn định, phát hiện khác biệt giữa tài liệu nguồn và xuất theo mẫu chính thức bằng python-docx.",
+          "Thiết kế khung đánh giá held-out trên 50 trường hợp thực tế với cấu hình cố định, chấm điểm bằng LLM-as-judge, bằng chứng được xác minh tự động và chỉ số theo từng phần; nâng độ chính xác tường thuật từ 0,76 lên 0,88 và độ chính xác phần bằng chứng từ 0,45 lên 1,00."
+        ],
+        "technologies": ["Python", "Qwen3-30B", "Ollama", "FastAPI", "python-docx", "Đánh giá LLM"]
+      },
+      {
+        "id": 2,
+        "company": "SNCF Réseau",
+        "position": "Nghiên cứu AI & Thị giác máy tính 3D – Phân đoạn đám mây điểm LiDAR cho tạo mô hình BIM",
+        "duration": "Thg 8/2025 – Thg 9/2026",
+        "location": "Saint-Denis, Pháp · Làm việc tại văn phòng",
+        "description": "Thực tập nghiên cứu AI về dữ liệu 3D và deep learning cho phân đoạn ngữ nghĩa và instance đám mây điểm LiDAR đường sắt.",
+        "responsibilities": [
+          "Phát triển và huấn luyện kiến trúc deep learning tiên tiến, gồm mạng dựa trên điểm và voxel, để phân đoạn ngữ nghĩa và instance các đám mây điểm LiDAR lớn, phi cấu trúc.",
+          "Thiết kế pipeline tiền xử lý tự động, vững chắc cho dữ liệu thưa và nhiều chiều, sử dụng giảm mẫu không gian, tăng cường dữ liệu hình học và chuẩn hóa đặc trưng.",
+          "Xây dựng bộ dữ liệu gán nhãn chính xác ở quy mô lớn bằng cách xác định kiểu cấu trúc trong môi trường hạ tầng dày đặc; phát triển quy trình xử lý đầu cuối có kiểm soát chất lượng để giảm mất cân bằng lớp và bảo đảm độ tin cậy của nhãn chuẩn.",
+          "Đánh giá định lượng mô hình bằng mIoU (78) và precision (99), phân tích nút thắt tính toán và tối ưu thời gian suy luận cho xử lý dữ liệu quy mô lớn.",
+          "Thiết kế thuật toán mới tự động trích xuất dây cáp, kết hợp phân đoạn instance và trích xuất đồ thị để tách các đường dây tiếp xúc chồng lấn mà không cần gán nhãn thủ công."
         ],
         "technologies": ["Python", "PyTorch", "PDAL", "LiDAR", "Thị giác máy tính 3D", "BIM"]
       },
       {
-        "id": 2,
+        "id": 3,
+        "company": "École Rockefeller",
+        "position": "Nghiên cứu Khoa học Dữ liệu & AI",
+        "duration": "Thg 2/2025 – Thg 7/2025",
+        "location": "Lyon, Pháp",
+        "description": "Ứng dụng machine learning và khoa học dữ liệu trên dữ liệu tổ chức và phân tích hoạt động.",
+        "responsibilities": [
+          "Phát triển và huấn luyện mô hình dự đoán chuỗi thời gian, gồm kiến trúc LSTM bằng Python và PyTorch, cải thiện hiệu quả phân loại so với mô hình cơ sở.",
+          "Xây dựng pipeline khai phá dữ liệu và tiền xử lý thống kê tự động cho các cơ sở dữ liệu SQL lịch sử, không đồng nhất; gồm phân tích khám phá, điền giá trị thiếu và chuẩn hóa đặc trưng.",
+          "Phát triển trợ lý hội thoại dùng LLM với LangChain và RAG để truy xuất thông tin từ cơ sở tri thức nội bộ phức tạp.",
+          "Tạo dashboard Power BI tương tác, chuyển các kết quả đánh giá mô hình như precision, recall, F1-score và mIoU thành thông tin hữu ích cho các bên liên quan không chuyên kỹ thuật."
+        ],
+        "technologies": ["Python", "PyTorch", "SQL", "LangChain", "RAG", "Power BI"]
+      },
+      {
+        "id": 4,
         "company": "Airmium",
         "employmentType": "Thực tập",
         "position": "Thực tập sinh Phát triển Phần mềm",
@@ -152,7 +178,7 @@
         "technologies": ["Java", "Spring Boot", "PostgreSQL", "Tailwind CSS", "CI/CD"]
       },
       {
-        "id": 3,
+        "id": 5,
         "company": "Đại học Lyon 1 – Dự án học thuật",
         "position": "Trưởng nhóm dự án & Lập trình viên",
         "duration": "2023 – Hiện tại",
@@ -160,7 +186,7 @@
         "technologies": ["Python", "React", "TensorFlow", "PostgreSQL", "Docker"]
       },
       {
-        "id": 4,
+        "id": 6,
         "company": "Công ty TNHH Manh Thai",
         "employmentType": "Thực tập",
         "position": "Thực tập sinh (Stage Ouvrier)",

@@ -10,7 +10,7 @@
   },
   "home": {
     "title": "Anh Vu",
-    "subtitle": "M2 AI graduate student, seeking PhD opportunities in 3D data, AI, computer vision, and AI for nutrition/gastronomy, and open to full-time engineering roles in these fields.",
+    "subtitle": "M2 Computer Science graduate, ranked 5th in September 2026. Seeking PhD opportunities and full-time engineering roles in 3D data, AI, computer vision, and AI for nutrition/gastronomy.",
     "description": "Passionate about turning research ideas into real-world systems through machine learning, computer vision, and full-stack development.",
     "viewWork": "View My Work",
     "getInTouch": "Get In Touch",
@@ -64,8 +64,8 @@
     "title": "About Me",
     "subtitle": "Learn more about my background, skills, and what drives me as a developer.",
     "greeting": "Hi, I'm Anh Vu",
-    "description1": "I'm an M2 Computer Science student at Université Lyon 1, specializing in AI and Data Science. I focus on 3D data, computer vision, and applied AI, especially at the intersection of nutrition and gastronomy.",
-    "description2": "I'm currently looking for PhD opportunities in 3D data, AI, computer vision, and AI for nutrition/gastronomy, and I am also open to full-time engineering positions in these domains. I'm passionate about building useful, human-centered AI solutions from research to deployment.",
+    "description1": "I graduated in September 2026, ranked 5th in the M2 Computer Science program at Université Lyon 1, specializing in AI and Data Science. I focus on 3D data, computer vision, and applied AI, especially at the intersection of nutrition and gastronomy.",
+    "description2": "I'm looking for PhD opportunities in 3D data, AI, computer vision, and AI for nutrition/gastronomy, and I'm also open to full-time engineering positions in these domains. I'm passionate about building useful, human-centered AI solutions from research to deployment.",
     "skills": "Skills",
     "frontend": "Frontend",
     "backend": "Backend",
@@ -124,26 +124,52 @@
     "items": [
       {
         "id": 1,
-        "company": "SNCF Réseau",
-        "employmentType": "Internship",
-        "position": "AI & 3D Computer Vision Intern – LiDAR Point Cloud Segmentation for BIM Generation",
-        "duration": "Mar 2026 – Present · 3 months",
-        "location": "St.-Denis, Île-de-France, France · On-site",
-        "description": "AI Research Intern working on 3D point cloud segmentation for automatic BIM model generation in dense railway environments.",
+        "company": "Freelance",
+        "employmentType": "Remote",
+        "position": "AI Engineer – Legal Document Drafting Assistant (Local LLM Pipeline)",
+        "duration": "Aug 2026 – Present",
+        "description": "Built an offline AI system for drafting legal documents from confidential case files, keeping all data on-device.",
         "responsibilities": [
-          "Conducting literature reviews on 3D semantic and instance segmentation methods for LiDAR point clouds.",
-          "Designing and building a labeled dataset for dense railway scenes (stations, multi-track areas).",
-          "Defining annotation schemas and developing an annotation workflow with quality control.",
-          "Developing and training deep learning models for 3D segmentation.",
-          "Implementing preprocessing pipelines including normalization, sampling, and 3D data augmentation.",
-          "Evaluating model performance using metrics such as mIoU, precision, recall, and inference time.",
-          "Working with tools such as Python, PyTorch, PDAL, and computer vision libraries.",
-          "Contributing to the automation of BIM model generation from LiDAR scans for railway infrastructure."
+          "Designed and built a fully offline drafting system running a local Qwen3-30B model with Ollama on a 16 GB GPU and a FastAPI web interface.",
+          "Developed citation-based generation linking every generated sentence to source paragraphs, with automatic ID and numeric-consistency checks and human review flags when verification fails.",
+          "Built document-processing and conflict-detection tools to parse Word files into structured data with stable element IDs, find discrepancies between source documents, and export strict official templates using python-docx.",
+          "Designed a held-out evaluation framework across 50 real cases with frozen configurations, LLM-as-judge scoring, automatically verified evidence, and per-section metrics; improved narrative correctness from 0.76 to 0.88 and evidence-section correctness from 0.45 to 1.00."
+        ],
+        "technologies": ["Python", "Qwen3-30B", "Ollama", "FastAPI", "python-docx", "LLM Evaluation"]
+      },
+      {
+        "id": 2,
+        "company": "SNCF Réseau",
+        "position": "AI & 3D Computer Vision Researcher – LiDAR Point Cloud Segmentation for BIM Generation",
+        "duration": "Aug 2025 – Sep 2026",
+        "location": "Saint-Denis, France · On-site",
+        "description": "AI research internship focused on 3D data and deep learning for semantic and instance segmentation of railway LiDAR point clouds.",
+        "responsibilities": [
+          "Engineered and trained advanced deep-learning architectures, including point-based and voxel-based neural networks, for 3D semantic and instance segmentation of massive, unstructured LiDAR point clouds.",
+          "Architected robust, automated preprocessing pipelines for sparse, high-dimensional datasets using spatial down-sampling, geometric data augmentation, and feature normalization.",
+          "Constructed large-scale, highly accurate annotated datasets by defining structural typologies for dense infrastructure scenes and building end-to-end processing workflows with quality controls for class imbalance and ground-truth fidelity.",
+          "Conducted quantitative model evaluations using mIoU (78) and precision (99), profiled computational bottlenecks, and optimized inference time for large-scale data processing.",
+          "Designed a novel automated cable-extraction algorithm combining instance segmentation and graph extraction to identify overlapping catenary lines without manual annotation."
         ],
         "technologies": ["Python", "PyTorch", "PDAL", "LiDAR", "3D Computer Vision", "BIM"]
       },
       {
-        "id": 2,
+        "id": 3,
+        "company": "École Rockefeller",
+        "position": "Data Science & AI Researcher",
+        "duration": "Feb 2025 – Jul 2025",
+        "location": "Lyon, France",
+        "description": "Applied machine learning and data science to institutional datasets and analytics.",
+        "responsibilities": [
+          "Developed and trained time-series prediction models, including LSTM architectures in Python and PyTorch, improving classification performance over baseline models.",
+          "Built automated data-mining and statistical preprocessing pipelines for heterogeneous historical SQL databases, including exploratory analysis, missing-value imputation, and feature normalization.",
+          "Developed an LLM-powered conversational agent using LangChain and Retrieval-Augmented Generation to retrieve information from complex institutional knowledge bases.",
+          "Created interactive Power BI dashboards translating model evaluation metrics, including precision, recall, F1-score, and mIoU, into actionable insights for non-technical stakeholders."
+        ],
+        "technologies": ["Python", "PyTorch", "SQL", "LangChain", "RAG", "Power BI"]
+      },
+      {
+        "id": 4,
         "company": "Airmium",
         "employmentType": "Internship",
         "position": "Software Development Intern",
@@ -152,7 +178,7 @@
         "technologies": ["Java", "Spring Boot", "PostgreSQL", "Tailwind CSS", "CI/CD"]
       },
       {
-        "id": 3,
+        "id": 5,
         "company": "Université Lyon 1 – Academic Projects",
         "position": "Project Lead & Developer",
         "duration": "2023 – Present",
@@ -160,7 +186,7 @@
         "technologies": ["Python", "React", "TensorFlow", "PostgreSQL", "Docker"]
       },
       {
-        "id": 4,
+        "id": 6,
         "company": "Société à responsabilité limitée Manh Thai",
         "employmentType": "Internship",
         "position": "Intern (Stage Ouvrier)",

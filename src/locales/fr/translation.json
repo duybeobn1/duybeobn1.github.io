@@ -10,7 +10,7 @@
   },
   "home": {
     "title": "Anh Vu",
-    "subtitle": "Étudiant en M2 IA, à la recherche d'opportunités de doctorat en données 3D, IA, vision par ordinateur et nutrition/gastronomie assistée par IA, ainsi que de postes CDI dans ces domaines.",
+    "subtitle": "Diplômé du M2 Informatique, classé 5e en septembre 2026. À la recherche d'un doctorat ou d'un poste d'ingénieur dans les domaines des données 3D, de l'IA, de la vision par ordinateur et de l'IA appliquée à la nutrition et à la gastronomie.",
     "description": "Passionné par la transformation d'idées de recherche en solutions concrètes grâce au machine learning, à la vision par ordinateur et au développement full-stack.",
     "viewWork": "Voir Mon Travail",
     "getInTouch": "Me Contacter",
@@ -64,8 +64,8 @@
     "title": "À Propos de Moi",
     "subtitle": "Découvrez mon parcours, mes compétences et ce qui me motive en tant que développeur.",
     "greeting": "Salut, je suis Anh Vu",
-    "description1": "Je suis étudiant en M2 Informatique à l'Université Lyon 1, spécialisé en IA et Data Science. Je travaille sur les données 3D, la vision par ordinateur et l'IA appliquée, notamment à l'intersection de la nutrition et de la gastronomie.",
-    "description2": "Je recherche actuellement des offres de doctorat en données 3D, IA, vision par ordinateur et IA pour la nutrition/gastronomie, et je suis également ouvert à des postes CDI dans ces domaines. Je suis passionné par la création de solutions IA utiles et centrées sur l'humain, de la recherche jusqu'au déploiement.",
+    "description1": "J'ai obtenu mon diplôme de M2 Informatique à l'Université Lyon 1 en septembre 2026, en me classant 5e de ma promotion. Spécialisé en IA et Data Science, je travaille sur les données 3D, la vision par ordinateur et l'IA appliquée, notamment à l'intersection de la nutrition et de la gastronomie.",
+    "description2": "Je recherche des opportunités de doctorat en données 3D, IA, vision par ordinateur et IA appliquée à la nutrition et à la gastronomie. Je suis également ouvert à des postes d'ingénieur à temps plein dans ces domaines. Je suis passionné par la création de solutions d'IA utiles et centrées sur l'humain, de la recherche jusqu'au déploiement.",
     "skills": "Compétences",
     "frontend": "Frontend",
     "backend": "Backend",
@@ -124,26 +124,52 @@
     "items": [
       {
         "id": 1,
-        "company": "SNCF Réseau",
-        "employmentType": "Stage",
-        "position": "Stagiaire IA & Vision par Ordinateur 3D – Segmentation de nuages de points LiDAR pour la génération BIM",
-        "duration": "Mars 2026 – Présent · 3 mois",
-        "location": "Saint-Denis, Île-de-France, France · Sur site",
-        "description": "Stagiaire en recherche IA travaillant sur la segmentation 3D de nuages de points pour la génération automatique de modèles BIM dans des environnements ferroviaires denses.",
+        "company": "Freelance",
+        "employmentType": "À distance",
+        "position": "Ingénieur IA – Assistant de rédaction juridique (pipeline LLM local)",
+        "duration": "Août 2026 – Aujourd’hui",
+        "description": "Conception d’un système d’IA hors ligne pour rédiger des documents juridiques à partir de dossiers confidentiels, sans transfert de données hors de la machine.",
         "responsibilities": [
-          "Réaliser des revues de littérature sur les méthodes de segmentation sémantique et d’instance 3D pour les nuages de points LiDAR.",
-          "Concevoir et construire un jeu de données annoté pour des scènes ferroviaires denses (gares, zones multi-voies).",
-          "Définir les schémas d’annotation et développer un workflow d’annotation avec contrôle qualité.",
-          "Développer et entraîner des modèles de deep learning pour la segmentation 3D.",
-          "Mettre en œuvre des pipelines de prétraitement incluant normalisation, échantillonnage et augmentation de données 3D.",
-          "Évaluer les performances des modèles via des métriques telles que mIoU, précision, rappel et temps d’inférence.",
-          "Travailler avec des outils comme Python, PyTorch, PDAL et des bibliothèques de vision par ordinateur.",
-          "Contribuer à l’automatisation de la génération de modèles BIM à partir de scans LiDAR pour les infrastructures ferroviaires."
+          "Conception d’un système de rédaction entièrement hors ligne utilisant un modèle local Qwen3-30B avec Ollama sur un GPU de 16 Go et une interface web FastAPI.",
+          "Développement d’une génération avec citations reliant chaque phrase générée aux paragraphes sources, avec vérifications automatiques des identifiants et des données numériques et signalement pour vérification humaine en cas d’échec.",
+          "Création d’outils de traitement de documents et de détection des conflits : extraction des fichiers Word en données structurées avec identifiants stables, détection des divergences et export dans des modèles officiels stricts avec python-docx.",
+          "Conception d’un cadre d’évaluation sur 50 cas réels avec configurations figées, notation par LLM, preuves vérifiées automatiquement et métriques par section ; amélioration de la justesse narrative de 0,76 à 0,88 et de la justesse des preuves de 0,45 à 1,00."
+        ],
+        "technologies": ["Python", "Qwen3-30B", "Ollama", "FastAPI", "python-docx", "Évaluation de LLM"]
+      },
+      {
+        "id": 2,
+        "company": "SNCF Réseau",
+        "position": "Recherche en IA et vision par ordinateur 3D – Segmentation de nuages de points LiDAR pour la génération BIM",
+        "duration": "Août 2025 – Sept. 2026",
+        "location": "Saint-Denis, France · Sur site",
+        "description": "Stage de recherche en IA consacré aux données 3D et au deep learning pour la segmentation sémantique et par instance de nuages de points LiDAR ferroviaires.",
+        "responsibilities": [
+          "Développement et entraînement d’architectures avancées de deep learning, notamment des réseaux à base de points et de voxels, pour la segmentation sémantique et par instance de nuages LiDAR massifs et non structurés.",
+          "Conception de pipelines automatisés et robustes de prétraitement pour des données clairsemées et de grande dimension : sous-échantillonnage spatial, augmentation géométrique et normalisation des caractéristiques.",
+          "Création de jeux de données annotés à grande échelle et de haute précision, avec définition de typologies structurelles et workflows de traitement complets intégrant des contrôles contre le déséquilibre des classes et pour la qualité des annotations.",
+          "Évaluation quantitative des modèles avec mIoU (78) et précision (99), analyse des goulots d’étranglement et optimisation du temps d’inférence pour le traitement de données à grande échelle.",
+          "Conception d’un nouvel algorithme d’extraction automatique des câbles combinant segmentation par instance et extraction de graphes pour identifier les lignes caténaires superposées sans annotation manuelle."
         ],
         "technologies": ["Python", "PyTorch", "PDAL", "LiDAR", "Vision 3D", "BIM"]
       },
       {
-        "id": 2,
+        "id": 3,
+        "company": "École Rockefeller",
+        "position": "Recherche en science des données et en IA",
+        "duration": "Févr. 2025 – Juil. 2025",
+        "location": "Lyon, France",
+        "description": "Application du machine learning et de la science des données à des jeux de données institutionnels et à l’analyse décisionnelle.",
+        "responsibilities": [
+          "Développement et entraînement de modèles de prévision de séries temporelles, dont des architectures LSTM avec Python et PyTorch, avec de meilleures performances de classification que les modèles de référence.",
+          "Création de pipelines automatisés de fouille de données et de prétraitement statistique pour des bases SQL historiques et hétérogènes : analyse exploratoire, imputation des valeurs manquantes et normalisation des caractéristiques.",
+          "Développement d’un agent conversationnel basé sur un LLM avec LangChain et génération augmentée par récupération (RAG) pour interroger des bases de connaissances institutionnelles complexes.",
+          "Création de tableaux de bord Power BI interactifs transformant les métriques d’évaluation (précision, rappel, F1 et mIoU) en informations exploitables par des équipes non techniques."
+        ],
+        "technologies": ["Python", "PyTorch", "SQL", "LangChain", "RAG", "Power BI"]
+      },
+      {
+        "id": 4,
         "company": "Airmium",
         "employmentType": "Stage",
         "position": "Stagiaire en Développement Logiciel",
@@ -152,7 +178,7 @@
         "technologies": ["Java", "Spring Boot", "PostgreSQL", "Tailwind CSS", "CI/CD"]
       },
       {
-        "id": 3,
+        "id": 5,
         "company": "Université Lyon 1 – Projets académiques",
         "position": "Chef de projet & Développeur",
         "duration": "2023 – Présent",
@@ -160,7 +186,7 @@
         "technologies": ["Python", "React", "TensorFlow", "PostgreSQL", "Docker"]
       },
       {
-        "id": 4,
+        "id": 6,
         "company": "Société à responsabilité limitée Manh Thai",
         "employmentType": "Stage",
         "position": "Stagiaire (Stage Ouvrier)",
